@@ -1,0 +1,11 @@
+# [START runtime]
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT Home.wsgi
+
+beta_settings:
+    cloud_sql_instances: testproj-1076:us-east1:blogs-instance
+
+runtime_config:
+  python_version: 3
+# [END runtime]
