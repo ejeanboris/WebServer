@@ -1,12 +1,11 @@
 from django.contrib import admin
-from blog.models import Blog, Category
+from blog.models import Blog, Category, MailBox
 # Register your models here.
 class BlogAdmin(admin.ModelAdmin):
-    exclude = ['posted']
-    prepopulated_fields = {'slug': ('title',)}
+    exclude = ['']
 
-class CategoryAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('title',)}
+class MailBoxAdmin(admin.ModelAdmin):
+    exclude= ['myEmails','connected']
 
 admin.site.register(Blog, BlogAdmin)
-admin.site.register(Category, CategoryAdmin)
+admin.site.register(MailBox, MailBoxAdmin)
