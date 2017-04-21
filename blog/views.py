@@ -6,7 +6,7 @@ from blog.models import Blog, Category
 def index(request):
     return render_to_response('index.html', {
         'categories': Category.objects.all(),
-        'emails': Blog.objects.all()[:5]
+        'emails': Blog.objects.all()
     })
 
 def view_post(request, slug):

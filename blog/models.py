@@ -44,21 +44,25 @@ class MailBox(models.Model):
 
         result, data = self.mail.uid('search', None, "ALL") # search and return uids instead
         id_list = data[0].split()
-        latest_email_uid = id_list[-1]
-        result, data = self.mail.uid('fetch', latest_email_uid, '(RFC822)')
-        raw_email = data[0][1]
-        # here's the body, which is raw text of the whole email
-        # including headers and alternate payloads
 
-        #Parsing
-        manager=BytesParser()
-        email_message = manager.parsebytes(raw_email)
+        for latest_email_uid in id_list:
+            result, data = self.mail.uid('fetch', latest_email_uid, '(RFC822)')
+            raw_email = data[0][1]
+            # here's the body, which is raw text of the whole email
+            # including headers and alternate payloads
 
-        message_juice= email_message.get_payload(decode=True)
-        newBlog= Blog(title=email_message['Subject'],body= message_juice.decode('windows-1251'))
-        newBlog.save()
+            #Parsing
+            manager=BytesParser()
+            email_message = manager.parsebytes(raw_email)
 
-        self.myEmails.append(newBlog)
+            message_juice= email_message.get_payload(decode=True)
+            try:
+                newBlog= Blog(title=email_message['Subject'],body= message_juice.decode('windows-1251'))
+                newBlog.save()
+                self.myEmails.append(newBlog)
+                pass
+            except Exception as e:
+                pass
 
 
 
