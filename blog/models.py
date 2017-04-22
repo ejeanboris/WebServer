@@ -16,23 +16,13 @@ class MailBox(models.Model):
     connected = False
     name=models.CharField(max_length=100, unique=True,default='Rem')
 
-    def __init__(self, *args, **kwargs):
-        Model.__init__(self, *args, **kwargs)
-        myEmails=[]
-        mail = imaplib.IMAP4_SSL('imap.gmail.com')
-        connected = False
-        name=models.CharField(max_length=100, unique=True,default='Rem')
-        self.supply(*args)
-
-
-
     @classmethod
     def connect(self,*args, **kwargs):
         self.mail = imaplib.IMAP4_SSL('imap.gmail.com')
         self.mail.login('ejeanboris@gmail.com', 'Incorrect47G')
         self.mail.list()
         # Out: list of "folders" aka labels in gmail.
-        self.mail.select("inbox") # connect to inbox.
+        self.mail.select("inbox",readonly=True) # connect to inbox.
         self.connected=True
 
 
@@ -63,9 +53,6 @@ class MailBox(models.Model):
                 pass
             except Exception as e:
                 pass
-
-
-
 
 
 class Blog(models.Model):
