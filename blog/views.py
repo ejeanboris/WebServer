@@ -4,9 +4,11 @@ from blog.models import Blog, Category
 
 # Create your views here.
 def index(request):
+
+
     return render_to_response('index.html', {
         'categories': Category.objects.all(),
-        'emails': Blog.objects.all()
+        'emails': Blog.objects.all()[:100]
     })
 
 def view_post(request, slug):

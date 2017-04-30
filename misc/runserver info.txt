@@ -1,0 +1,2 @@
+cloud_sql_proxy.exe -instances="testproj-1076:us-east1:blogs-instance"=tcp:3306
+

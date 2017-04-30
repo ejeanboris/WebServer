@@ -76,33 +76,25 @@ WSGI_APPLICATION = 'Home.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 # [START db_setup]
-if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
-    DATABASES = {
-        'default': {
-            # If you are using Cloud SQL for MySQL rather than PostgreSQL, set
-            # 'ENGINE': 'django.db.backends.mysql' instead of the following.
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'blogs',
-            'USER': 'Remi',
-            'PASSWORD': 'Incorrect47',
-        }
+DATABASES = {
+    'default': {
+        # If you are using Cloud SQL for MySQL rather than PostgreSQL, set
+        # 'ENGINE': 'django.db.backends.mysql' instead of the following.
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'blogs',
+        'USER': 'Remi',
+        'PASSWORD': 'Incorrect47',
     }
-    # In the flexible environment, you connect to CloudSQL using a unix socket.
-    # Locally, you can use the CloudSQL proxy to proxy a localhost connection
-    # to the instance
-    DATABASES['default']['HOST'] = '/cloudsql/testproj-1076:us-east1:blogs-instance'
-    if os.getenv('GAE_INSTANCE'):
-        pass
-    else:
-        DATABASES['default']['HOST'] = '127.0.0.1'
-
+}
+# In the flexible environment, you connect to CloudSQL using a unix socket.
+# Locally, you can use the CloudSQL proxy to proxy a localhost connection
+# to the instance
+DATABASES['default']['HOST'] = '/cloudsql/testproj-1076:us-east1:blogs-instance'
+if os.getenv('GAE_INSTANCE'):
+    pass
 else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+    DATABASES['default']['HOST'] = '127.0.0.1'
+
 # [END dbconfig]
 
 

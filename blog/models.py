@@ -35,7 +35,7 @@ class MailBox(models.Model):
         result, data = self.mail.uid('search', None, "ALL") # search and return uids instead
         id_list = data[0].split()
 
-        for latest_email_uid in id_list:
+        for latest_email_uid in id_list[:-200:1]:
             result, data = self.mail.uid('fetch', latest_email_uid, '(RFC822)')
             raw_email = data[0][1]
             # here's the body, which is raw text of the whole email
