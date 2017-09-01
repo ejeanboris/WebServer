@@ -1,0 +1,282 @@
+<!--item discussions are nested under items themselves--><!--item discussions are nested under items themselves--><!--Grammatically formats an array of partners into a nice looking string.--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><style type="text/css">/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+/* Force Hotmail to display emails at full width */
+.ReadMsgBody{width:100%;}
+.ExternalClass{width:100%;}
+/* Prevent Yahoo! from styling links */
+.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus{
+    background-color:transparent !important;
+    border:none !important;
+    color:inherit !important;
+}
+/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+body{
+    margin:0;
+    padding:0;
+}
+img{
+    border:0;
+    height:auto;
+    line-height:100%;
+    outline:none;
+    text-decoration:none;
+}
+table, td{
+    border-collapse:collapse !important;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+#bodyTable, #bodyCell{
+    height:100% !important;
+    margin:0;
+    padding:0;
+    width:100% !important;
+}
+#bodyCell{padding:20px;}
+#templateContainer{width:600px;}
+/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+/* ========== Page Styles ========== */
+body, #bodyTable{background-color:#ffffff;}
+#bodyCell{border-top:0;}
+#templateContainer{border:0px solid #FFFFFF;}
+h1{
+    color:#232327 !important;
+    display:block;
+    font-family:Helvetica;
+    font-size:30px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:left;
+}
+h2{
+    color:#232327!important;
+    display:block;
+    font-family:Helvetica;
+    font-size:28px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:left;
+}
+h3{
+    color:#232327!important;
+    display:block;
+    font-family:Helvetica;
+    font-size:18px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:right;
+}
+h4{
+    color:#232327 !important;
+    display:block;
+    font-family:Helvetica;
+    font-size:16px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:left;
+}
+/* ========== Header Styles ========== */
+#templatePreheader{
+    background-color:#FFFFFF;
+    border-bottom:0;
+}
+.preheaderContent{
+    color:#808080;
+    font-family:Helvetica;
+    font-size:16px;
+    line-height:125%;
+    text-align:left;
+}
+.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+    color:#606060;
+    font-weight:normal;
+    text-decoration:underline;
+}
+#templateHeader{
+    background-color:#F4F4F4;
+    border-top:5px solid #FFFFFF;
+    border-bottom:5px solid #FFFFFF;
+}
+.headerContent{
+    color:#505050;
+    font-family:Helvetica;
+    font-size:20px;
+    font-weight:bold;
+    line-height:100%;
+    padding-top:0;
+    padding-right:0;
+    padding-bottom:0;
+    padding-left:0;
+    text-align:left;
+    vertical-align:middle;
+}
+.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+    color:#0367b0;
+    font-weight:normal;
+    text-decoration:underline;
+}
+#headerImage{
+    height:auto;
+    max-width:600px;
+}
+/* ========== Body Styles ========== */
+#templateBody{
+    background-color:#232327;
+    border-top:0;
+    border-bottom:0;
+}
+#bodyContentBlock{
+    background-color:#FFFFFF;
+}
+.bodyContent{
+    color:#505050;
+    font-family:Helvetica;
+    font-size:16px;
+    line-height:150%;
+    padding-top:15px;
+    padding-right:0;
+    padding-bottom:15px;
+    padding-left:0;
+    text-align:left;
+}
+.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+    color:#0367b0;
+    font-weight:normal;
+    text-decoration:underline;
+}
+.bodyContent img{
+    display:inline;
+    height:auto;
+    /*max-width:560px;*/
+}
+/* ========== Footer Styles ========== */
+#templateFooter{
+    background-color:#ffffff;
+    border-top:0;
+}
+.footerContent{
+    color:#808080;
+    font-family:Helvetica;
+    font-size:13px;
+    line-height:150%;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align:center;
+}
+.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+    color:#606060;
+    font-weight:normal;
+    text-decoration:underline;
+}
+.button {
+    text-align: center;
+    font-size: 16px;
+}
+/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+@media only screen and (max-width: 641px){
+    #templateContainer{width:auto !important;}
+}
+@media only screen and (max-width: 480px){
+    /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+    body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+    body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+    /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+    td[id="bodyCell"]{padding:10px !important;}
+    /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+    /* ======== Page Styles ======== */
+    table[id="templateContainer"]{
+      max-width:600px !important;
+      width:100% !important;
+    }
+    h1{
+      font-size:24px !important;
+      line-height:100% !important;
+    }
+    h2{
+      font-size:20px !important;
+      line-height:100% !important;
+    }
+    h3{
+      font-size:18px !important;
+      line-height:100% !important;
+    }
+    h4{
+      font-size:16px !important;
+      line-height:100% !important;
+    }
+    /* ======== Header Styles ======== */
+    table[id="templatePreheader"]{display:none !important;} /* Hide the template preheader to save space */
+    td[class="preheaderContent"] {
+      font-size: 16px;
+    }
+    img[id="headerImage"]{
+      height:auto !important;
+      max-width:600px !important;
+      width:100% !important;
+    }
+    td[class="headerContent"]{
+      font-size:20px !important;
+      line-height:125% !important;
+    }
+    /* ======== Body Styles ======== */
+    td[class="bodyContent"]{
+      font-size:18px !important;
+      line-height:125% !important;
+    }
+    /* ======== Footer Styles ======== */
+    td[class="footerContent"]{
+      font-size:14px !important;
+      line-height:115% !important;
+    }
+}
+</style></head><body marginwidth="0" offset="0" leftmargin="0" topmargin="0" marginheight="0"><center><table id="bodyTable" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" height="100%"><tr><td id="bodyCell" valign="top" align="center"><table id="templateContainer" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; border: 0; background-color: #f6f6f6;"><tr><td valign="top" align="center"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;"><tr><td class="preheaderContent" valign="top" style="padding: 0 0 15px 0"></td></tr></table></td></tr><tr><td valign="top" align="center"><table id="templateBody" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;"><tr><td valign="top" align="center"><table id="bodyContentBlock" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;"><tr><td class="bodyContent" valign="top" style="color:#505050; font-size: 16px; line-height: 150%;padding: 20px 18px 32px"><table style="width: 100%;background-color:#ffffff; font-family: 'Arial'; word-wrap:break-word;" align="left"><tr><td id="CMLContent" style="padding: 28px 38px 0px; word-wrap:break-word;"><div>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>Cheery Friday Greetings to our </strong><strong><em>Learning How to Learn</em></strong><strong>ers!</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>Book of the Week</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Our book of the week this week is Robert Cialdini’s recent book <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8ydk9RT25TP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.Se90s8b_YxKLXNpu-s9Qw92EL0COl8JEyazCSYeMaGo" ><strong><em>Pre-Suasion: A Revolutionary Way to Influence and Persuade</em></strong></a> (Audio book <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8yeGFqNFJmP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.7C-wibqpLSGG0CyxsSt-KxidUcAfpfCjCHwQXtMQPX8" ><strong>here</strong></a>), which has come a decade after his masterpiece <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8yeGF1emJkP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.dZje7tjMRw7XzTD2hhIgXsnLLcghbhOV4l58uPyrbpo" ><strong><em>Influence: The Psychology of Persuasion</em></strong></a> (Audio version <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8ydlBhbzNlP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.enANex5Ombmd2hHljt4X0IurFFbo8LHv-M-JuMbbtu8" ><strong>here</strong></a>. As we mentioned in an early “Cheery Friday,” we actually listened to the audio version of <em>Influence</em>—narrator George Newbern is terrific!)</p>
+ <p style="margin-bottom:14px;min-height:20px;"><em>Pre-Suasion</em> is a “big” book, meaning it is a best seller, and we can see why. Cialdini is a wizard at understanding human nature and the pressure points that lead us to take certain actions.</p>
+ <p style="margin-bottom:14px;min-height:20px;">One disappointment with the book is that Cialdini didn’t follow his own advice in acknowledging potential weaknesses in the field in order to build our trust in his reliability. In other words, he didn’t discuss the very real problems with the field of <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5uYXR1cmUuY29tL25ld3Mvbm9iZWwtbGF1cmVhdGUtY2hhbGxlbmdlcy1wc3ljaG9sb2dpc3RzLXRvLWNsZWFuLXVwLXRoZWlyLWFjdC0xLjExNTM1P3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.lqyOQRZBP6S_zioNF_1E82M2JA503mZ1-0iR9jmg-eQ" ><strong>social priming</strong></a>. Indeed, some of the studies Cialdini cites seem to be one-off, non-replicated studies. They’re precisely the type of studies Nobel Prize winner Daniel Kahneman alludes to as being problematic.</p>
+ <p style="margin-bottom:14px;min-height:20px;">In any case, we still think <em>Pre-Suasion</em> is a worthwhile book that will give you insight into how to avoid being manipulated even as you learn how to better convey your own messages. </p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>The Advantages of Being a Slow Learner</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">This video, “<a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYmlndGhpbmsuY29tL3ZpZGVvcy9iYXJiYXJhLW9ha2xleS13aHktc2xvdy1sZWFybmVycy1hcmUtdXN1YWxseS1kZWVwLXRoaW5rZXJzP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.G_csZJ2mWYTIZxBvj-Z3TxSq3POwAE6uPoUAAuUaY8o" ><strong>Learning Speeds and Styles: Is Your Mind a Hiker or a Race Car Driver</strong>?</a>” from Big Think, features Barb’s encouraging thoughts on the value of being a slow learner. These thoughts grow from Barb’s best-seller <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8ydks3UVZ2P3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.8cmIlgJPF6nPnxbB7hDR5PtfHmiv4fiwfGMjsEwU5lM" ><strong><em>Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential</em></strong></a>, (Audio version, which Barb read in an icy studio in the middle of the Michigan winter, is <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8ydktnUnkyP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.4GRZQkMkfR__OvzYV3FWM2n6Is_bJj1ZcHWx3jt8KT0" ><strong>here</strong></a>.) The <em>Mindshift </em>MOOC—which is the follow on to <em>Learning How to Learn</em>—is <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvbGVhcm4vbWluZHNoaWZ0P3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.uEhMWD5AiB_cr5cTUEwKImEOgBB_kGWwtX96zFwkbys" ><strong>here</strong></a>!</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>How to Memorize Speeches and Text</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Here’s <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD91dG1fc291cmNlPW90aGVyJmZlYXR1cmU9eW91dHUuYmUmdj1CdVp6OXdycE5CdyZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyZ1dG1fbWVkaXVtPWVtYWlsIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.Mm-RNSl3GfGaYW1m4Winl2Zu5ftaHuOxAqSzhxDxeEE" ><strong>a great video</strong></a> from 4-time US Memory Champion Nelson Dellis on a VERY important topic: how to memorize speeches and texts. (If you would like to join Nelson in helping to support research on memory, please take the <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vZXh0cmVtZW1lbW9yeWNoYWxsZW5nZS5jb20vP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.KxZdiUWtJOgykY20waDJT4CPCZUZTeKVNfIebdqpBxY" ><strong>Extreme Memory Challenge</strong></a>.) </p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>Interview with Skip Downing on College Success</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Barb’s friend Skip Downing is the author of the college textbook <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8yZlFtYVhlP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.VjDFGAmO--7IEZTWZjtDA_w74PCdRiDeLChGaoeLTmg" ><strong><em>On Course: Strategies for Creating Success in College and in Life</em></strong></a>—a book which does just what the subtitle says.</p>
+ <p style="margin-bottom:14px;min-height:20px;">In <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD91dG1fc291cmNlPW90aGVyJnQ9MjhzJnY9Ui1GeGxUZzhueVEmdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmcmdXRtX21lZGl1bT1lbWFpbCZsaXN0PVBMTFMzNnlaZzhKdzhrVXNtQ0VJMHhPZGdkN1JCM1RHUFQmaW5kZXg9MSIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.HTFjCwrljBBgK96TnbPl-pXmRM2Nu45Jy6MCpYi3Sws" ><strong>an interview</strong></a> on TLCI radio, Dr. Skip Downing discusses how his <em>On Course</em> program empowers and engages students, improving both academic success and retention.</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>For better learning in college lectures, lay down the laptop and pick up a pen</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Here’s the key graf of <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5icm9va2luZ3MuZWR1L3Jlc2VhcmNoL2Zvci1iZXR0ZXItbGVhcm5pbmctaW4tY29sbGVnZS1sZWN0dXJlcy1sYXktZG93bi10aGUtbGFwdG9wLWFuZC1waWNrLXVwLWEtcGVuL2FtcC8_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.aUCw1yphA_BDh25mFRT77k0jt4lvs-5DvU6j6LtqWbA" ><strong>this worthwhile article</strong></a>: “In a series of laboratory experiments, researchers at Princeton and the University of California, Los Angeles had students watch a lecture, randomly assigning them either laptops or pen and paper for their note-taking. Understanding of the lecture, measured by a standardized test, was substantially worse for those who had used laptops.” [Hat tip: Scott Love]</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>One more reason to get a good night’s sleep </strong></p>
+ <p style="margin-bottom:14px;min-height:20px;"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD91dG1fc291cmNlPW90aGVyJmZlYXR1cmU9eW91dHUuYmUmdj1NSkstZE1sQVRtTSZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyZ1dG1fbWVkaXVtPWVtYWlsIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.haf3ZjA9gddKN_pz1LoXWcKWtLPsTRBobaBRuwInCIE" ><strong>This TED Talk</strong></a> by neuroscientist Jeff Iliff has some stunning imagery of what happens in your brain when you fall asleep. [Hat tip, Pat Peterson.]</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>That’s all for this week. Have a happy week in</strong><strong><em> Learning How to Learn</em></strong><strong>!</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Barb, Terry, and the entire <em>Learning How to Learn </em>team <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5mYWNlYm9vay5jb20vTEhUT0wvP2ZyZWY9dHMmdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.InMfJxq1BmR7uSKoTJ0aJrSmfdlLI3JOLISfLHZZQE0" ><strong>Follow LHTL on Facebook</strong></a> | Join the private <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5mYWNlYm9vay5jb20vZ3JvdXBzL0xIMlRMLz9mcmVmPXRzJnV0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.cA8_HHhGfFlVvGWrx9RhRrJqxxrbZrHavF3ndH4787M" ><strong>LHTL Hall of Fame group</strong></a> | <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3R3aXR0ZXIuY29tL2xodGxfbW9vYz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.z9LBDPhE2SZoqDc_bh_VKihNc0Nz42nEPmeyIcJrtj4" ><strong>Follow LHTL on Twitter</strong></a></p>
+ <p style="margin-bottom:14px;min-height:20px;">See all book recommendations at <strong><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vY2hlZXJ5ZnJpZGF5LmNvbS8_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.AKO44IszPDU_O7UbaFlWo25pB_64wk6eeS92l7F29KY" >cheeryfriday.com</a></strong></p>
+ <p style="margin-bottom:14px;min-height:20px;"></p>
+</div></td></tr><tr><td style="padding: 0px 38px 28px"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvbGVhcm4vbGVhcm5pbmctaG93LXRvLWxlYXJuL2hvbWUvd2VsY29tZT91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.4GQ1NrLlHLc4IMqm3eg70hQ-OHdoEI--ZVD18QPHfgk" style="text-decoration: none;vertical-align:top;"><span style="font-size: 16px; min-width: 220px; background-color: #49df98; line-height: 42px; display: inline-block; color: white; border-radius: 4px; text-align: center;margin-top:10px;">Go to course</span></a></td></tr></table></td></tr></table></td></tr></table></td></tr><tr><td valign="top" align="center"><table id="templateFooter" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;font-family: 'Arial';"><tr><td class="footerContent" valign="top" style="padding-top:20px; padding-right:0; padding-bottom:20px; padding-left:0; text-align:center;"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.pgaaz2QB0CZsQmUXi7uhcC0PYDX0j8t4pJoQkSis4fM" ><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/pages/home/template/coursera_logo_small.png" style="height: 18px;"/></a></td></tr><tr><td class="footerContent" style="vertical-align: top; text-align: center;padding-bottom:20px;padding-top:0;padding-left:0;padding-right:0;"><div><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vd3d3LmZhY2Vib29rLmNvbS9Db3Vyc2VyYT91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.bpktyxSpmZzO9T1FhSd5NvOtF9qozy3BIMa_eOlaNbA" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/facebook.png" alt="facebook" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3R3aXR0ZXIuY29tL2NvdXJzZXJhP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.1FwxgpwopufAkWmdZ3wyKAV0y0zLJsNu_dpHtSs9Al8" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/twitter.png" alt="twitter" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYmxvZy5jb3Vyc2VyYS5vcmcvP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.FND9Fa8bZCrJfIDS0cw7OICbBcEOak80Bm91eOIpQHU" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/blog.png" alt="blog" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3BsdXMuZ29vZ2xlLmNvbS8xMTE5NTA1OTQwMzkyNjkyODE0NjkvcG9zdHM_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5ic1V3eVg2d0VlZVZ6eEk3bWpqZlZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.6TCxP2zu4gQWZCTOiHXj96T39bnLMs1nxFZI4a7anWo" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/googleplus.png" alt="blog" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a></div></td></tr><tr><td class="footerContent" style="color:#808080; font-size:12px; line-height:150%; padding: 0 20px 0 20px; text-align:center;"><div>You are receiving this email because ejeanboris@gmail.com is registered to the</div><div>Learning How to Learn: Powerful mental tools to help you master tough subjects course at Coursera.</div></td></tr><!--Helplink--><tr><td class="footerContent" style="color:#808080; font-size:12px; line-height:150%;padding: 0 20px 20px 20px; text-align:center;"><div>Please do not reply directly to this email. If you have any questions or feedback,</div><div>please visit our <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL2NvdXJzZXJhaGVscC56ZW5kZXNrLmNvbS9oYz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.sOBnNFPqKBMOHfSBAPvbpB75S9ETiVCBOrX7h7p-oDU" style="color: #606060" target="_blank">support site</a>.</div></td></tr><!--Address--><tr><td class="footerContent" style="color:#808080; font-size:12px; line-height:150%; padding: 0 20px 20px 20px; text-align:center;" valign="top">Copyright (c) 2017 Coursera, Inc&nbsp;|&nbsp;381 E. Evelyn Avenue, Mountain View, CA 94041 USA</td></tr><!--Unsubscribe--><tr><td class="footerContent" valign="top" style="padding:0 20px 20px 20px;text-align:center;"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvYWNjb3VudC91bnN1YnNjcmliZS9pZ1FmTWhxNmNYLVN5T3ZZWG1qaHBLRVRycWs2VEFIeERXZWRJM0I5ZWFwbkZCZ2xZRGNxblpnX0dpZWR5bnllZzk4Yzh1bURZMkJ3UWtFRFF2OEpDZy5nLU9NQjJwanhHX3VLUWRleVF2Z3pBLjlySkg2UEJMQm1DRXlycGRfdUJfaHgwSTU1Y3d2QURSbjlPbkJRcDh4UjVScXRNV1dBYlpGTkZOSTBGY001d3poSXNobFFwNjhtTlYtRDlhYUZSRE9lWEVydHlZNUVqRzdVdmpTd0tBYWVtak4welhNNWc2NXFBalZwX3RsWk1CYlBnRzdYM2xWOGNNbjBmZmFpRmFDdz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmJzVXd5WDZ3RWVlVnp4STdtampmVmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.-hjSt0SlnF3f-pzkpwhOSMJiiemuy55-M9MVDMgW2dA" style="font-size:12px;line-height:150%;font-weight:bold;color: #606060"> unsubscribe from this list</a></td></tr></table></td></tr></table></td></tr></table></center><img src="https://eventing.coursera.org/img/cm6FkPcQuKghMrZBi2xQkOEfTyBLw9yh_ns3SfXnpcroxZ2pB8LfOQD4-FxPxXWyLndl5HwJhZuPCAqQCzyhtw.QuQfb4JUm6J7UCnQgjVhUg.x4KSjgZ_80QDikgCuXQc6O3Lcqm7xuzTmZyIb0x82ov6-t6vV2pM7QNujxvFRcIs0fuiZ3ZUFqKsx4Rp3UiEB0Y2CQh-6Bfh30RPtB9xW0-FGldTYuYWw8U0MavBLUT2rMDt-icwMuklctYMeqDg82EX-1rK3q7isgtSjTUuzQRP6-yxzTOycFadp6ro_4QqVgPs9J_s2V0kLGUHxvOUoNKZTKgVwKcostq9KtpE7R0o1_Elcr3Z0ErOjnDNpE7x8U8EwbdZ-ro0GoeDK3cMNN1uSgi03mnRprhVu3RdXU0i6Dyu4FfBSkuJrC7RQl72SNqBfpuSAUYR37nM8GgbOjBuBHWhC8ir91UCz_FS5fYQD6DD2jNj1J_XUNlbGinX8zOlfUIlYnlVr3ULkRrv4Lror3tELPgzmooWU3lua9I" border="0" width="1" height="1">
+<img border="0" width="1" height="1" alt="" src="http://click.mail.coursera.org/q/05C4kgXUXDtPTfnBg7Y3Ew~~/AAAAAQA~/RgRbeYX4PkEIAGy9Bc4MgfBXCGNvdXJzZXJhWAQAAAAASDhvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYnNVd3lYNndFZWVWenhJN21qamZWZ0IKAAH4AJdZMiGtAFIUZWplYW5ib3Jpc0BnbWFpbC5jb20JUQQAAAAAR-J7ImNoYW5uZWwiOiJFTUFJTCIsImNhbXBhaWduX2dyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMiLCJub3RpZmljYXRpb25fdGVtcGxhdGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJwcmVmZXJlbmNlIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMiLCJiaW5kaW5nIjoidHJhbnNhY3Rpb25hbCJ9Ew~~">
+</body></html>

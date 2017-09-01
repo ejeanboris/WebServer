@@ -17,7 +17,7 @@ def fillUp(modeladmin, request, queryset):
         result, data = obj.mail.uid('search', None, "ALL") # search and return uids instead
         id_list = data[0].split()
 
-        for latest_email_uid in id_list[:-100:-1]:
+        for latest_email_uid in id_list[-100::1]:
             result, data = obj.mail.uid('fetch', latest_email_uid, '(RFC822)')
             raw_email = data[0][1]
 
@@ -52,21 +52,20 @@ def fillUp(modeladmin, request, queryset):
                 newBlog= Blog(title=email_message['Subject'], body= "This email could not be processed see what happened \n\nSubject: "+email_message['Subject'])
                 newBlog.save()
                 pass
-            obj.myEmails.append(latest_email_uid)
-
-
-fillUp.short_description = "Download all emails from inbox; do this only once"
+            obj.setData(repr(latest_email_uid))
+fillUp.short_description = "Download all emails from inbox. ONLY ONCE"
 
 def refresh(modeladmin, request, queryset):
     for obj in queryset:
+        existing=obj.myEmails.split()
         #if self.connected==False:
         obj.connect()
 
         result, data = obj.mail.uid('search', None, "ALL") # search and return uids instead
         id_list = data[0].split()
 
-        for latest_email_uid in id_list[:-100:-1]:
-            if latest_email_uid in obj.myEmails:
+        for latest_email_uid in id_list[-100::1]:
+            if repr(latest_email_uid) in existing:
                 pass
 
             else:
@@ -95,15 +94,16 @@ def refresh(modeladmin, request, queryset):
                     try:
                         newBlog= Blog(title=email_message['Subject'], body= html_message_juice.decode())
                         newBlog.save()
+                        obj.setData(repr(latest_email_uid))
                     except:
                         newBlog= Blog(title=email_message['Subject'], body= html_message_juice.decode('windows-1251'))
                         newBlog.save()
+                        obj.setData(repr(latest_email_uid))
 
                 except:
                     newBlog= Blog(title=email_message['Subject'], body= "This email could not be processed see what happened \n\nSubject: "+email_message['Subject'])
                     newBlog.save()
-                    pass
-            obj.myEmails.append(latest_email_uid)
+                    obj.setData(repr(latest_email_uid))
 refresh.short_description = "Download new emails from inbox"
 
 #Models
@@ -111,7 +111,7 @@ class BlogAdmin(admin.ModelAdmin):
     exclude = ['']
 
 class MailBoxAdmin(admin.ModelAdmin):
-    exclude= ['myEmails','connected']
+    exclude= ['connected']
     actions = [fillUp,refresh]
 
 admin.site.register(Blog, BlogAdmin)

@@ -1,0 +1,765 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<title>Humble Bundle</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    
+    /* Force Outlook to provide a "view in browser" message */
+    #outlook a {
+      padding: 0;
+    }
+    
+     /* Force Hotmail to display emails at full width */
+    .ReadMsgBody {
+      width: 100%;
+    }
+    
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+    
+    /* Prevent WebKit and Windows mobile changing default text sizes */
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    
+    /* Remove spacing between tables in Outlook 2007 and up */
+    table,
+    td {
+      padding: 0;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    
+    /* Allow smoother rendering of resized image in Internet Explorer */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+    
+    /* RESET STYLES */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+    
+    table {
+      border-collapse: collapse !important;
+    }
+    
+    body {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    
+    /* iOS BLUE LINKS */
+    .appleBody a {
+      color: #68440a;
+      text-decoration: none;
+    }
+
+    .appleFooter a {
+      color: #999999;
+      text-decoration: none;
+    }
+
+    /* Make table widths less succeptible to the whims of the user-agent */
+    table,
+    td {
+      table-layout: fixed;
+    }
+
+    /*MOBILE STYLES */
+    @media screen and (max-width: 642px) {
+      /* ALLOWS FOR FLUID TABLES */
+      table[class="wrapper"],
+      table.wrapper {
+        width: 100% !important;
+      }
+      /* ADJUSTS LAYOUT OF LOGO IMAGE */
+      td[class="logo"],
+      td.logo {
+        text-align: left;
+        padding: 20px 0 20px 0 !important;
+      }
+      td[class="logo"] img,
+      td.logo img {
+        margin: 0 auto!important;
+      }
+      /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+      td[class="mobile-hide"],
+      td.mobile-hide {
+        display: none;
+      } /* This is highly redundant and should be fixed */
+      img[class="mobile-hide"],
+      img.mobile-hide, 
+      .mobile-hide {
+        display: none !important;
+      }
+      img[class="img-max"],
+      img.img-max {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+      img[class="img-fill"],
+      img.img-fill {
+        width: 100% !important;
+        height: auto !important;
+      }
+      /* FULL-WIDTH TABLES */
+      table[class="responsive-table"],
+      table.responsive-table {
+        width: 100% !important;
+      }
+      /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+      td[class="padding"],
+      td.padding {
+        padding: 10px 5% 15px 5% !important;
+      }
+      td[class="padding-copy"],
+      td.padding-copy {
+        padding: 10px 5% 10px 5% !important;
+        text-align: center;
+        display: block;
+      }
+      td[class="padding-copy-left"],
+      td.padding-copy-left {
+        padding: 10px 5% 10px 5% !important;
+        text-align: left;
+        display: block;
+      }
+      td[class="padding-meta"],
+      td.padding-meta {
+        padding: 30px 5% 0px 5% !important;
+        text-align: center;
+      }
+      td[class="no-pad"],
+      td.no-pad {
+        padding: 0 0 20px 0 !important;
+      }
+      td[class="no-padding"],
+      td.no-padding {
+        padding: 0 !important;
+      }
+      td[class="section-padding"],
+      td.section-padding {
+        padding: 10px 10px 10px 10px !important;
+      }
+      td[class="section-header"],
+      td.section-header {
+        padding: 10px 15px 10px 15px !important;
+      }
+      td[class="section-padding-bottom-image"],
+      td.section-padding-bottom-image {
+        padding: 50px 15px 0 15px !important;
+      }
+      /* ADJUST BUTTONS ON MOBILE */
+      td[class="mobile-wrapper"],
+      td.mobile-wrapper {
+        padding: 10px 5% 15px 5% !important;
+      }
+      /* TEMPLATE-SPECIFIC STYLES */
+      /* Smoothly collapse store grid from 2 to 1 column layout */
+      div[class="griditem"],
+      div.griditem {
+        padding-right: 0px !important;
+      }
+      /* Smoothly collapse monthly value items to a vertical layout */
+      td[class="monthly-value"],
+      td.monthly-value {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      /* Switch from left-right justified logo+text to centered logo above text */
+      td[class="store-header"],
+      td.store-header {
+        text-align: center !important;
+        display: inline-block !important;
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#e4e7ed;">
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e4e7ed"><tr>
+<td align="center" valign="top" style="padding:10px;"> 
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="622px" class="responsive-table"><tr>
+<td align="center" valign="top" width="100%">
+        
+        
+        
+        
+        
+                
+        
+                
+        
+        
+        
+                
+        
+                
+        
+        
+         
+        
+                        
+        <div style="display: none; font-size: 1px; font-family: Helvetica, Arial, sans-serif; height: 0px; width: 0px; opacity: 0; overflow: hidden;">
+  
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:6px;"><tr>
+<td align="center">
+
+<table width="622" style='border-collapse:collapse; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;' class="responsive-table"><tr>
+<td width="111" style="text-align:left;" class="store-header">
+    <div id="header-wrapper">
+      <a data-crdl-variant="" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/6290a940/fc33958d4af8373c47b512b3599fd827//"><img src="https://d1ok0qgebci2d3.cloudfront.net/102/145x26/1c751f9f-235f-47b7-9c0c-2217825b96be.png" alt="Humble Store"></a>
+      <div class="clear"></div>
+    </div>
+    </td>
+    <td width="511" style="text-align:right" class="store-header">
+<a data-crdl-variant="" style="text-decoration:none;" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/ed0ba37c/14dc07fc05369ae100c5ab9f290c3356//">
+     <div id="header-text-subhead" style="display:inline-block; color:#A1A7B2; font-size:12px;">
+      <strong>Great games. Fantastic prices.</strong><br><span style="font-weight: normal">Up to 10% of proceeds support your charity of choice.</span>
+      </div>
+        </a>
+      </td>
+  </tr></table>
+</td>
+</tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style='border-collapse: collapse; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif'><tr>
+<td name="wrapper-datum" style="text-align: center;">
+
+      <table>
+<tr>
+<td>
+              <!--- *BANNER CODE* -->
+                <div>
+                    <a data-crdl-variant="" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/dc4d1734/9673c5a06ab29fe54de3e1bcb89fe11b//">
+                        <img src="https://d1ok0qgebci2d3.cloudfront.net/102/600x170/quakecon-2017-store-newsletter-600x170.jpg" width="622" style="display: block; border: 0;" alt="Get fantastic games on the Humble Store!" class="img-max"></a>
+                </div>
+          </td>
+        </tr>
+<tr>
+<td height="8" style="font-size:8px; line-height:8px;"> </td>
+      </tr>
+</table>
+</td>
+  </tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style='border-collapse: collapse; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif'>
+<tr>
+<td width="100%" name="wrapper-datum" style="text-align: center;">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="display:inline-block; max-width:622px; border-collapse:collapse; table-layout:fixed; text-align:left;">
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/prey?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/49b71bcbe7093f14360db3473d74b0f978735cb8.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=f67aba4f6e502c9c0751e0fe398c5d97" alt="prey" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -50%
+          </span>        </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+
+
+
+ 
+  
+  
+      
+    
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/doom?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/f1145f13ff162ad7fdc206fed0822f68bc1b5359.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=a85059f3db006f3abcf12252b68a7d62" alt="doom" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -33%
+          </span>        </td>
+      </tr></table>
+</td>
+            </tr>
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/fallout-4?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/5a3d901bff79bd3127c65261b53e41807c935ebf.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=f6e949bc693f712da37109caddf13012" alt="fallout-4" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -33%
+          </span>        </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+
+
+
+ 
+  
+  
+      
+    
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/dishonored-2?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/03c562e4a9d1ae23bd3fcb0a99393177f307d397.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=635a1d5cb4ec94b6b3b423cfc09e54ee" alt="dishonored-2" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -25%
+          </span>        </td>
+      </tr></table>
+</td>
+            </tr>
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/the-elder-scrolls-v-skyrim-special-edition?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/05fce6eddb14e9ff8b556be85aac2ecef9bc8de8.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=8a33ca5fa75c01858ede0702e42f63c8" alt="the-elder-scrolls-v-skyrim-special-edition" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -50%
+          </span>        </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+
+
+
+ 
+  
+  
+      
+    
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/wolfenstein-the-new-order?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/e8095cee92627a52f5b736e453265237507ee1a2.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=4bf7678e126ccbd4e5d1090edae692ac" alt="wolfenstein-the-new-order" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -25%
+          </span>        </td>
+      </tr></table>
+</td>
+            </tr>
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/the-elder-scrolls-online-morrowind?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/35f813103db3287b2e22e665268fde8e90744847.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=685bcc424cbe6e22684678bdbc937331" alt="the-elder-scrolls-online-morrowind" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -33%
+          </span>        </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+
+
+
+ 
+  
+  
+      
+    
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/the-evil-within?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/66b67b53dc9c3ff62a8ad18c74a7cae022857491.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=abf443d445a0e7a23a486a4c48ce6e72" alt="the-evil-within" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -75%
+          </span>        </td>
+      </tr></table>
+</td>
+            </tr>
+</table>
+</td>
+  </tr>
+<tr>
+<td height="20" style="font-size:20px; line-height:20px;"> </td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+<td align="center" width="100%" style="text-align:center;">
+
+<table border="0" cellpadding="0" cellspacing="0" width="622" class="responsive-table">
+<tr>
+<td width="100%" height="20" style="border-top-right-radius:6px; border-top-left-radius:6px; background:#ffffff;">
+    </td>
+  </tr>
+<!--  BUNDLE ITEM MAIN CONTENT WRAPPER  --><tr>
+<td width="100%" style="background:#ffffff;">
+<!-- -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" style="text-align:center; padding: 10px 8px 10px 8px; font-size: x-large; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
+        To date, more than $98 million has been donated to charity thanks to people like you!
+      </td>
+    </tr>
+<tr>
+<td align="center" style="text-align:center; padding: 15px 0 15px 0;">
+        <!-- BULLETPROOF BUTTON -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+<td align="center" style="padding: 5px 0 10px 0;">
+                            <a data-crdl-variant="" target="_blank" style="font-size:x-large; font-family:Helvetica, Arial, sans-serif; font-weight:normal; color:#ffffff; text-decoration:none; background-color:#adcc52; border-top:12px solid #adcc52; border-bottom:12px solid #adcc52; border-left:26px solid #adcc52; border-right:26px solid #adcc52; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; display:inline-block; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);" href="https://www.humblebundle.com/store?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&linkID=&utm_content=cta_button">
+                Shop Now!
+              </a>
+            </td>
+          </tr></table>
+</td>
+    </tr>
+</table>
+<!--  BUNDLE ITEM MAIN CONTENT WRAPPER  -->
+</td>
+</tr>
+<!-- --><tr>
+<td align="center" style="text-align:center; padding: 10px 0 0 0; background:#f4f5f7;">
+      <!-- COPY -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="center" style="text-align:center; padding: 20px 0 20px 0; font-size: large; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy"></td>
+        </tr></table>
+</td>
+  </tr>
+<tr>
+<!-- IMAGE --><td align="center" style="text-align:center; padding: 0; background:#f4f5f7;">
+            <a data-crdl-variant="" target="_blank" href="https://www.humblebundle.com/store?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&linkID=&utm_content=charity_logos"><img src="https://d1ok0qgebci2d3.cloudfront.net/102/600x70/Charity_Banner_List_t2.png" width="536" border="0" alt="Choose Your Own Charity" style="padding: 0;" class="img-max"></a>
+    </td>
+  </tr>
+<tr>
+<td height="26" style="font-size:26px; line-height:26px; border-bottom-right-radius:6px; border-bottom-left-radius:6px; background:#f4f5f7;"> </td>
+  </tr>
+<tr>
+<td height="40" style="font-size:40px; line-height:40px;"> </td>
+  </tr>
+</table>
+</td>
+</tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style='border-collapse: collapse; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif'><tr>
+<td name="wrapper-datum" style="text-align: center;">
+
+      <table>
+<tr>
+<td>
+              <!--- *BANNER CODE* -->
+                <div>
+                    <a data-crdl-variant="" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/20e3d0be/be18322025a458ccc4d6e46e28f4b46c//">
+                        <img src="https://d1ok0qgebci2d3.cloudfront.net/102/600x170/destiny2-store-preorder-newsletter-600x170.png" width="622" style="display: block; border: 0;" alt="Get fantastic games on the Humble Store!" class="img-max"></a>
+                </div>
+          </td>
+        </tr>
+<tr>
+<td height="8" style="font-size:8px; line-height:8px;"> </td>
+      </tr>
+</table>
+</td>
+  </tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style='border-collapse: collapse; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif'>
+<tr>
+<td width="100%" name="wrapper-datum" style="text-align: center;">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="display:inline-block; max-width:622px; border-collapse:collapse; table-layout:fixed; text-align:left;">
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/sonic-mania?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/c3db6102c85527bd8045adee935204c0e15db29b.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=6a2e8014435131e88077f9b4f7ed4b19" alt="sonic-mania" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #7e992e; color:#7e992e;">
+            Pre-Order
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -10%
+          </span>        </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+  
+  
+
+
+
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/wolfenstein-ii-the-new-colossus?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/91cb08dc2ac24b3be3fecc2a279d59ccbdda147c.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=4350f948c1334122acd8d3c27ddb4b2f" alt="wolfenstein-ii-the-new-colossus" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #7e992e; color:#7e992e;">
+            Pre-Order
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                </td>
+      </tr></table>
+</td>
+            </tr>
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/f1-2017?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/afe2e5e90726be03e2e0bd3f0bb461a2cac43677.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=e57e08442f0d7fa66449c456e24badfe" alt="f1-2017" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #7e992e; color:#7e992e;">
+            Pre-Order
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+  
+  
+
+
+
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/the-escapists-2?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/1579ea9b7d544781aeed76d06a2bd3987c7b1c95.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=2f1440f9dd4825d03c0cc1bb59bbf06f" alt="the-escapists-2" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #7e992e; color: #7e992e;">
+            Out Now
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                </td>
+      </tr></table>
+</td>
+            </tr>
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/absolver?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/802e6a049ca4b1f51096454e54bfc13b4d85da0b.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=e31b2aa47998e7a41e432ca1b341d6b3" alt="absolver" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #7e992e; color:#7e992e;">
+            Pre-Order
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -10%
+          </span>        </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+
+
+
+ 
+  
+  
+      
+    
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/the-town-of-light?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/63648c8f5de549eec3f7d4bd1cc763739ff8f4fa.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=7a758957f10775bf5a9cfe7aec04f9c5" alt="the-town-of-light" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -25%
+          </span>        </td>
+      </tr></table>
+</td>
+            </tr>
+<tr>
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/farming-simulator-17?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/9ac9ea78a0df466f359e87b861a7225605fd9d3a.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=b285e7ecedc37ed04431dd63ab8731ae" alt="farming-simulator-17" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -33%
+          </span>        </td>
+      </tr></table>
+</td>
+            <td width="2%"> </td>                                                                                                                      
+
+
+
+
+ 
+  
+  
+      
+    
+
+<td width="49%" style="padding-bottom:0.5em; margin:0;">
+        <a data-crdl-variant="" style="text-decoration:none;  display:block;" href="https://www.humblebundle.com/store/empyrion-galactic-survival?linkID=&mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_24_Quakecon_store&utm_content=Grid_Image">
+    <img src="https://humblebundle.imgix.net/misc/files/hashed/95a762030cf6fdf402469b843a44f0b562926b9b.jpg?auto=format&amp;fit=crop&amp;h=176&amp;w=308&amp;ixlib=python-0.2.0&amp;s=c97f4ed29852bd1d22a2c6b90f0ee38d" alt="empyrion-galactic-survival" width="100%" border="0" style="display:block; height:auto;"></a><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="margin:0; border-radius:0 0 8px 8px; vertical-align:middle;"><tr>
+<td align="left" valign="middle" width="65%" style="padding:8px 0 8px 8px;">
+          <span style="display:inline-block; padding:7px 5%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#ffffff; border:1px solid #d0021b; color: #d0021b;">
+            On Sale
+                    </span>
+        </td>
+        <td align="right" valign="middle" width="35%" style="padding:8px 8px 8px 0;">
+                  <span style="display:inline-block; padding:7px 7%; vertical-align:middle; border-radius:3px; font-size:12px; font-weight:bold; background-color:#747b87; border:1px solid #747b87; color:#ffffff;">
+            -50%
+          </span>        </td>
+      </tr></table>
+</td>
+            </tr>
+</table>
+</td>
+  </tr>
+<tr>
+<td height="20" style="font-size:20px; line-height:20px;"> </td>
+  </tr>
+</table>
+<!-- SOCIAL LINKS --><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+<td align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="300" class="responsive-table"><tr>
+<td>
+            
+
+<table id="social-link-table" width="100%"><tr>
+<td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="http://www.facebook.com/humblebundle" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/29x20/FB_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="facebook"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="facebook" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/85832441/99eec7598c3de24485eea0a9ffafd450//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/29x20/FB_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+        <td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="http://www.twitter.com/humble" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/28x21/TW_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="twitter"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="twitter" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/656894c9/cd8e95e2074d9ab6ebb6e3d8f8b564b3//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/28x21/TW_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+        <td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="https://plus.google.com/+humblebundle" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/28x20/GPLUS_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="google+"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="google+" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/0c43f548/45f2796541ea425103714a92abd6d585//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/28x20/GPLUS_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+        <td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="http://steamcommunity.com/groups/HumbleBundleOfficial" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/28x20/ST_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="steam"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="steam" href="http://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/9c0e074d/ace44a38b1082a2ad8b3f5c1489cd003//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/28x20/ST_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+      </tr></table>
+</td>
+        </tr></table>
+</td>
+  </tr></table>
+<!-- FOOTER --><table border="0" cellspacing="0" cellpadding="0" width="100%" align="center" style="background-color: transparent;"><tr>
+<td style="padding: 20px 0px;" align="center">
+    <!-- UNSUBSCRIBE COPY -->
+    <table width="500" border="0" cellspacing="0" cellpadding="0" align="center" class="responsive-table"><tr>
+<td align="center" class="padding-copy" style='font-size: 12px; line-height: 18px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #606060;'>
+              <br> 
+			This email was sent to ejeanboris@gmail.com <br><a class="footer-link" href="https://track.cordial.io/optout/index.php?mcID=102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1" data-crdl-notrack="true" style="color: black;">unsubscribe</a>  | <a data-crdl-variant="" style="color: black;" href="https://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/c51379c4/f3d7478835644e41c0c29c98571c1b05//">email preferences</a> | <a data-crdl-variant="" style="color: black;" href="https://track.cordial.io/c/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/ca823ab5/166627d846b89aded691b3aec8e6c60e//">contact support</a><br>
+			© 2017 Humble Bundle Inc. | 201 Post Street 11th Floor | San Francisco, CA | 94108<br><br>
+</td>
+      </tr></table>
+</td>
+</tr></table>
+</td>
+</tr></table>
+</td>
+</tr></table>
+<img src="http://track.cordial.io/o/p/102:599c90abf4ab4e35735c28cb:ot:5850696cf7bb513ff1bd2c91:1/17b4a46d0f1f93380c0bbe31df804111" height=1 width=1 />
+<img border="0" width="1" height="1" alt="" src="http://sptrack.mailer.humblebundle.com/q/uMjYTHik0-qRH0aHWFD3mg~~/AAAAAQA~/RgRbgZ3rPkEIAKy9BgWCdNVXB2NvcmRpYWxYBAAAAA1CCgAC6xifWRhh5chSFGVqZWFuYm9yaXNAZ21haWwuY29tCVEEAAAAAEdpeyJtY0lEIjoiMTAyOjU5OWM5MGFiZjRhYjRlMzU3MzVjMjhjYjpvdDo1ODUwNjk2Y2Y3YmI1MTNmZjFiZDJjOTE6MSIsImJpbmRpbmciOiJoYi1kIiwiZW52IjoicHJvZHVjdGlvbiJ9">
+</body>
+</html>
+

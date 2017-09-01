@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="twitter:image:src" content="https://pe.tedcdn.com/images/ted/f31921658cd7664afb090cead854af453758ce0d_800x600.jpg"><meta name="twitter:description" content="We all go through challenges -- some you can see, most you can't, says Michele L. Sullivan. In a talk about perspective, Sullivan shares stories full of wit and wisdom and reminds us that we're all part of each other's support systems. &quot;The only shoes you can walk in are your own,&quot; she says. &quot;With compassion, courage and understanding, we can walk together, side by side.&quot;"><meta name="twitter:title" content="Asking for help is a strength, not a weakness"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="article"><meta property="og:description" content="We all go through challenges -- some you can see, most you can't, says Michele L. Sullivan. In a talk about perspective, Sullivan shares stories full of wit and wisdom and reminds us that we're all part of each other's support systems. &quot;The only shoes you can walk in are your own,&quot; she says. &quot;With compassion, courage and understanding, we can walk together, side by side.&quot;"><meta property="og:image" content="https://pe.tedcdn.com/images/ted/f31921658cd7664afb090cead854af453758ce0d_800x600.jpg"><meta property="og:title" content="Asking for help is a strength, not a weakness"><meta property="og:url" content="http://eepurl.com/cH7m7b">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Asking for help is a strength, not a weakness</title>
+	
+<style type="text/css">
+		body{
+			margin:0;
+			padding:0;
+			padding-bottom:40px;
+			width:100%;
+			font-family:Helvetica, Arial;
+			background:#EEEAE7;
+			font-size:16px;
+			line-height:130%;
+		}
+	@media only screen and (max-width: 600px){
+		body{
+			font-size:20px;
+			!important;
+			line-height:130%;
+		}
+
+}		a,a:visited{
+			text-decoration:none;
+			color:#ff2b06;
+			font-weight:bold;
+		}
+		.convoLink a{
+			color:#000001;
+		}
+		.convoLink a:hover{
+			text-decoration:underline;
+		}
+		h1{
+			font-size:26px;
+			line-height:130%;
+		}
+	@media only screen and (max-width: 600px){
+		h1{
+			font-size:30px;
+			!important;
+			line-height:130%;
+		}
+
+}		h2{
+			font-size:20px;
+			line-height:130%;
+			-webkit-margin-before:0px;
+		}
+		h2 a,h2 a:visited,h2 a:link,h2 a:hover,h2 a:active{
+			color:#000001;
+		}
+	@media only screen and (max-width: 600px){
+		h2{
+			font-size:26px;
+			!important;
+			line-height:130%;
+		}
+
+}		a h1,a:visited h1,a:link h1,a:active h1,a:hover h1{
+			color:#000001;
+			text-decoration:none;
+			text-align:left;
+		}
+		h3{
+			font-size:14px;
+			font-weight:bold;
+			color:#aaaaaa;
+			text-transform:uppercase;
+		}
+		h3 a,h3 a:link,h3 a:visited{
+			color:#aaaaaa;
+		}
+		h4{
+			font-weight:bold;
+			line-height:100%;
+		}
+		img{
+			border:0;
+			height:auto;
+			outline:none;
+		}
+		.imgBorder{
+			position:relative;
+			float:left;
+			background:#ffffff;
+			padding:6px;
+			margin-right:9px;
+			-webkit-border-radius:2px;
+			-moz-border-radius:2px;
+			border-radius:2px;
+			-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+			-o-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+			box-shadow:0 1px 1px rgba(0,0,0,0.3);
+		}
+		table,td{
+			border-collapse:collapse;
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+	@media only screen and (max-width: 600px){
+		table{
+			width:100% !important;
+		}
+
+}		.preheader{
+			background-color:#707070;
+			border-bottom:2px solid #5a5a5a;
+			color:#ffffff;
+			font-size:12px;
+			padding:10px;
+			text-align:right;
+		}
+		.preheader a{
+			color:#ffffff;
+			text-decoration:underline !important;
+		}
+	@media only screen and (max-width: 600px){
+		div[id=preheader]{
+			display:none !important;
+			padding:10px 20px 10px 20px !important;
+		}
+
+}		.headerBlock{
+			margin:25px 0px 25px 0px;
+			width:600px;
+		}
+		.dateLabel{
+			font-size:12px;
+			color:#aaaaaa;
+			font-style:italic;
+			font-weight:bold;
+			line-height:100%;
+			letter-spacing:normal;
+			text-transform:uppercase;
+			text-align:right;
+			padding-top:5px;
+		}
+		.headerLabel{
+			font-size:16px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:100%;
+			letter-spacing:normal;
+			text-transform:uppercase;
+			text-align:right;
+			color:#000;
+		}
+		.headerLabel a,.headerLabel a:link,.headerLabel a:visited{
+			color:#000001;
+		}
+		.dotBreaker{
+			display:inline-block;
+			color:#ff2b06;
+		}
+		.contentBodyTop{
+			background:#FFFFFF;
+			border-radius:5px 5px 0px 0px;
+			width:600px;
+			padding:20px 20px 20px 20px;
+			text-align:left;
+			border-bottom:1px solid #E5E4E2;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBodyTop{
+			border-radius:0 !important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.contentBody{
+			background:#FFFFFF;
+			width:600px;
+			padding:20px 20px 20px 20px;
+			text-align:left;
+			border-top:1px solid #ffffff;
+			border-bottom:1px solid #E5E4E2;
+			margin-top:1px;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBody{
+			border-radius:0 !important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.contentBodyAlt{
+			background:#F7F5F3;
+			width:600px;
+			padding:20px 20px 20px 20px;
+			text-align:left;
+			border-top:1px solid #ffffff;
+			border-bottom:1px solid #E5E4E2;
+			margin-top:1px;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBodyAlt{
+			border-radius:0 !important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.contentBodyBottom{
+			background:#FFFFFF;
+			border-radius:0px 0px 5px 5px;
+			width:600px;
+			padding:20px 0px 20px 0px;
+			text-align:left;
+			border-bottom:1px solid #E5E4E2;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBodyBottom{
+			border-radius:0!important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.oneup{
+			padding:20px 20px 20px 20px;
+			display:block;
+			position:relative;
+		}
+		.gridText{
+			max-width:95%;
+			padding:0px 10px 10px 10px;
+		}
+	@media only screen and (max-width: 600px){
+		.gridText{
+			max-width:100% !important;
+		}
+
+}		.gridText{
+			max-width:95%;
+			padding:0px 10px 10px 10px;
+		}
+	@media only screen and (max-width: 600px){
+		.gridText{
+			max-width:100% !important;
+		}
+
+}		.gridLeft{
+			position:relative;
+			float:left;
+			width:50%;
+		}
+	@media only screen and (max-width: 600px){
+		.gridLeft{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.gridRight{
+			position:relative;
+			float:right;
+			width:50%;
+		}
+	@media only screen and (max-width: 600px){
+		.gridRight{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.twoThirdLeft{
+			position:relative;
+			float:left;
+			width:360px;
+		}
+	@media only screen and (max-width: 600px){
+		.twoThirdLeft{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.oneThirdRight{
+			position:relative;
+			float:right;
+			width:180px;
+		}
+	@media only screen and (max-width: 600px){
+		.oneThirdRight{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.oneThirdLeft{
+			position:relative;
+			float:left;
+			width:150px;
+		}
+	@media only screen and (max-width: 600px){
+		.oneThirdLeft{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.twoThirdRight{
+			position:relative;
+			float:right;
+			width:380px;
+		}
+	@media only screen and (max-width: 600px){
+		.twoThirdRight{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.featureFlag{
+			display:block;
+			background-color:#F7C64A;
+			background-image:-moz-linear-gradient(0% 100% 90deg, #f7aa4a, #f7c64a);
+			color:#000;
+			border-bottom:1px solid #a8a8a8;
+			border-right:1px solid #a8a8a8;
+			text-shadow:1px 1px 0 #FBD7A4;
+			font-weight:bold;
+			font-size:14px;
+			text-transform:uppercase;
+			padding:6px 12px;
+			margin:0px 0px 20px -24px;
+			width:150px;
+		}
+		.talkVideoLink{
+			display:block;
+			margin:10px 0;
+			position:relative;
+			text-align:center;
+		}
+		.talkVideoLink:after{
+			background:url(http://pl.tedcdn.com/newsletter_assets/weekly/bgWatchVideo.png);
+			content:" ";
+			display:block;
+			height:36px;
+			left:50%;
+			margin:-18px 0 0 -25px;
+			position:absolute;
+			top:50%;
+			width:51px;
+		}
+	@media only screen and (max-width: 600px){
+		.talkVideoScreen{
+			width:100% !important;
+		}
+
+}		.meta{
+			color:#AAAAAA;
+			font-size:12px;
+			line-height:120%;
+			margin:1em 0;
+		}
+		#button{
+			font-family:Helvetica;
+			background-color:#ff2b06;
+			border:0;
+			border-radius:3px;
+			padding:8px;
+			text-align:center;
+			background-image:linear-gradient(top, #DF4040 1%, #B61D1D 100%);
+			width:180px;
+		}
+		#button a,#button a:active,#button a:link,#button a:visited,#button a:hover{
+			color:#FFFFFF;
+			text-align:center;
+			text-decoration:none;
+			font-weight:normal;
+			display:block;
+			text-shadow:0 -1px 0 rgba(0, 0, 0, .2);
+		}
+		.quoteMark{
+			color:#AAAAAA;
+			font-family:Arial;
+			font-size:80px;
+			padding:35px 10px 0 0;
+		}
+		hr{
+			border:1px solid #ffffff;
+			margin:20px 10px 20px 10px;
+		}
+		.footer{
+			color:#ff2b06;
+			background-color:#707070;
+			padding:20px 0px 20px 0px;
+		}
+		.footerContent{
+			font-size:12px;
+			color:#ffffff;
+		}
+		.footerContent a{
+			color:#ffffff;
+			text-decoration:underline;
+		}
+		#linksWrapper{
+			padding:20px 20px 20px 20px;
+		}
+		#links{
+			min-width:540px;
+		}
+		.linkImage,.linkText{
+			border-bottom:1px solid #FFFFFF;
+			color:#000001;
+			font-size:14px;
+			line-height:140%;
+			padding:10px;
+		}
+		.linkImage{
+			width:16px;
+		}
+		.linkText{
+			padding-left:0;
+		}
+		.linkText a,.linkText a:active,.linkText a:link,.linkText a:visited,.linkText a:hover{
+			color:#000001;
+			font-weight:bold;
+		}
+</style></head>
+
+<body style="margin: 0;padding: 0;padding-bottom: 40px;width: 100%;font-family: Helvetica, Arial;background: #EEEAE7;font-size: 16px;line-height: 130%;"><div itemscope="" itemtype="http://schema.org/EmailMessage"><div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><meta itemprop="name" content="TED"><link itemprop="url" content="http://www.ted.com/newsletter"></div><div itemprop="about" itemscope="" itemtype="http://schema.org/Offer"><link itemprop="image" href="https://pe.tedcdn.com/images/ted/f31921658cd7664afb090cead854af453758ce0d_800x600.jpg"></div></div>
+<table align="center" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<!-- pre header -->
+	<!--
+ -->
+	<tr>
+		<td align="center" class="preheader" mc:label="display" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #707070;border-bottom: 2px solid #5a5a5a;color: #ffffff;font-size: 12px;padding: 10px;text-align: right;"></td>
+	</tr>
+	<!--
+ -->
+</table>
+
+<table align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<!-- headerblock -->
+	<tr>
+		<td align="center" mc:label="header" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="headerBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;margin: 25px 0px 25px 0px;width: 600px;">
+				<tr>
+					<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+						<a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=a642bbc52e&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">
+						<img src="http://pl.tedcdn.com/newsletter_assets/weekly/TEDlogo_80px.png" alt="TED" mc:label="header_image" mc:allowdesigner="" mc:allowtext="" style="border: 0;height: auto;outline: none;">
+					</a>
+					</td>
+					<td align="right" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+						<div class="headerLabel" mc:label="mailHeader" style="font-size: 16px;font-style: normal;font-weight: bold;line-height: 100%;letter-spacing: normal;text-transform: uppercase;text-align: right;color: #000;">This week on TED.com</div>
+						<div class="dateLabel" style="font-size: 12px;color: #aaaaaa;font-style: italic;font-weight: bold;line-height: 100%;letter-spacing: normal;text-transform: uppercase;text-align: right;padding-top: 5px;">March 25, 2017</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- contents -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyTop" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;border-radius: 5px 5px 0px 0px;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-bottom: 1px solid #E5E4E2;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr>
+					<td class="oneup" mc:label="featured" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h1 style="font-size: 26px;line-height: 130%;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=65eaee1ab6&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><span style="color:#000000">Michele L. Sullivan: Asking for help is a strength, not a weakness </span></a></h1>
+<a class="talkVideoLink" href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=22c919fbaf&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/f31921658cd7664afb090cead854af453758ce0d_800x600.jpg" width="100%" style="border: 0;height: auto;outline: none;"> </a>
+
+<p class="meta" style="color: #AAAAAA;font-size: 12px;line-height: 120%;margin: 1em 0;">11:55 minutes &middot; Filmed Oct 2016 &middot; Posted Mar 2017 &middot; TEDWomen 2016</p>
+
+<p>We all go through challenges -- some you can see, most you can&#39;t, says Michele L. Sullivan. In a talk about perspective, Sullivan shares stories full of wit and wisdom and reminds us that we&#39;re all part of each other&#39;s support systems. &quot;The only shoes you can walk in are your own,&quot; she says. &quot;With compassion, courage and understanding, we can walk together, side by side.&quot;</p>
+
+<div id="button" style="background: #ff2b06 linear-gradient(top, #DF4040 1%, #B61D1D 100%);font-family: Helvetica;background-color: #ff2b06;border: 0;border-radius: 3px;padding: 8px;text-align: center;background-image: linear-gradient(top, #DF4040 1%, #B61D1D 100%);width: 180px;"><a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=68542288f1&e=4212952d24" target="_blank" style="text-decoration: none;color: #FFFFFF;font-weight: normal;text-align: center;display: block;text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);">Watch now &raquo;</a></div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- playlist of the week -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyAlt" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #F7F5F3;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="playlist" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=ff3a805c8d&e=4212952d24" target="_blank" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">Playlist of the week</a></h3>
+
+<div class="oneThirdLeft" style="position: relative;float: left;width: 150px;"><a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=99738ec0d4&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><img align="left" class="imgBorder" src="http://pf.tedcdn.com/images/playlists/love_technology_146x146.jpg" style="border: 0;height: auto;outline: none;position: relative;float: left;background: #ffffff;padding: 6px;margin-right: 9px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);-o-box-shadow: 0 1px 1px rgba(0,0,0,0.3);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);box-shadow: 0 1px 1px rgba(0,0,0,0.3);"> </a></div>
+
+<div class="twoThirdRight" style="position: relative;float: right;width: 380px;">
+<h2 style="font-size: 20px;line-height: 130%;-webkit-margin-before: 0px;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=d91ca83b39&e=4212952d24" target="_blank" style="text-decoration: none;color: #000001;font-weight: bold;">Love + technology = ?</a></h2>
+
+<p>These talks examine where (and how) relationships and love factor into our technologically driven world. <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=192c800847&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+
+<p class="meta" style="color: #AAAAAA;font-size: 12px;line-height: 120%;margin: 1em 0;">5 TED Talks &bull; Total run time 1:21:57</p>
+</div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- more talks -->	
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyAlt" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #F7F5F3;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="moreTalks" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=4dc285cd47&e=4212952d24" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">This week&#39;s new TED Talks</a></h3>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<tbody>
+		<tr>
+			<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><!--ONE-->
+			<div class="gridLeft" style="position: relative;float: left;width: 50%;"><a class="talkVideoLink" href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=1640d79544&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/e618fc4480ba207cf98be7db17cc0fcca4e08960_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">Critical care doctor Peter Weinstock shows how surgical teams are using a blend of Hollywood special effects and 3D printing to create amazingly lifelike reproductions of real patients -- so they can practice risky surgeries ahead of time. Think: &quot;Operate twice, cut once.&quot; Glimpse the future of surgery in this forward-thinking talk. <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=0205c10ce5&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+
+			<div class="gridRight" style="position: relative;float: right;width: 50%;"><!--TWO--><a class="talkVideoLink" href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=4b2fc6c6dc&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/7b7cdf8c77ae35f09da3556d1e5082f5724619e2_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">Wish you could vote in another country&#39;s election? Simon Anholt unveils the Global Vote, an online platform that lets anybody, anywhere in the world, &quot;vote&quot; in the election of any country on earth (with surprising results). <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=30766a723e&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<div class="gridLeft" style="position: relative;float: left;width: 50%;"><!--THREE--><a class="talkVideoLink" href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=d9f50a820b&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/fcc9eed0dcefe0b8d6f6deb4b58fbd7a325bd5c5_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">In a war, it turns out that violence isn&#39;t the biggest killer of civilians. What is? Illness, hunger, poverty -- because war destroys the institutions that keep society running, like utilities, banks, food systems and hospitals. Physician Margaret Bourdeaux proposes a bold approach to post-conflict recovery, setting priorities on what to fix first. <a href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=462b689846&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+
+			<div class="gridRight" style="position: relative;float: right;width: 50%;"><!--FOUR--><a class="talkVideoLink" href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=bf11a0af19&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/a23f13f3c924ac1702608314d11e89dd153a2fa4_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">Sometimes it&#39;s hard to know what statistics are worthy of trust. But we shouldn&#39;t count out stats altogether ... instead, we should learn to look behind them. In this delightful, hilarious talk, data journalist Mona Chalabi shares handy tips to help question, interpret and truly understand what the numbers are saying. <a href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=3e47b7dddd&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- news -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBody" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="news" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=3010ae2063&e=4212952d24" target="_blank" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">Read more on ideas.ted.com</a></h3>
+
+<div><strong>Creativity:</strong> Celebrate the genius of <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=1843db0431&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">frugal innovation &gt;&gt;</a><br>
+In praise of <em>Jugaad</em>, those clever inventions and ideas born of adversity<br>
+<br>
+<strong>Culture: </strong>Is empathy <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=624c889eb8&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">overrated?</a><br>
+A contrarian&#39;s view: Sometimes, empathy doesn&#39;t help<br>
+<br>
+<strong>Gallery: </strong>Unexpected visions of <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=bc2608a348&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Pakistan &gt;&gt;</a><br>
+Mighty mountains, ancient traditions<br>
+<br>
+<strong>Relationships:</strong> Yes, technology has changed <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=e6fa4ee000&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">the way we love &gt;&gt;</a><br>
+Esther Perel shows how our tech tools have changed the way we form -- and end -- our relationships<br>
+<br>
+<a href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=6e42e4d578&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><img data-file-id="26605" height="330" src="https://gallery.mailchimp.com/07487d1456302a286cf9c4ccc/images/ef76e264-3190-400c-a1a0-b6037aa0879e.gif" style="border: 0px;width: 550px;height: 330px;margin: 0px;outline: none;" width="550"></a></div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+    <!-- advertisement -->
+	<tr>
+		<td align="center" mc:label="advertisement" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"></td>
+	</tr>
+
+	<!-- quote -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyAlt" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #F7F5F3;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="quote" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;">
+						<h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;">Quote of the Week</h3>
+							<table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+								<tr>
+									<td class="quoteMark" valign="top" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;color: #AAAAAA;font-family: Arial;font-size: 80px;padding: 35px 10px 0 0;">&#8220;</td>
+									<td class="quoteBody bodyContent" valign="top" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+										<p>Inspiration and growth only come from adversity and from challenge — from stepping away from what's comfortable and familiar and stepping out into the unknown."</p>
+
+										<table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+											<tr>
+												<td valign="top" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+													<b>Ben Saunders</b>
+                                                    <br>
+													Why bother leaving the house?
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- distribution -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBody" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="distribution" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;">TED Radio Hour: Painfully Funny</h3>
+
+<div class="twoThirdLeft" style="position: relative;float: left;width: 360px;">Ever feel like things are so bad all you can do is laugh? Then this week's TED Radio Hour episode is for you.
+<a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=2793d6c60b&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Listen on iTunes &raquo;</a>
+
+<p>&nbsp;</p>
+</div>
+
+<div class="oneThirdRight" style="margin-top: -50px;position: relative;float: right;width: 180px;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=47ed23e52c&e=4212952d24" target="_blank" style="color: #ff0000;text-decoration: none;font-weight: bold;"> <img alt="" border="0" height="150" src="http://pl.tedcdn.com/newsletter_assets/daily/NPR-logo.png" style="border: 0;display: block;padding-top: 20px;height: auto;outline: none;" width="180"> </a></div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- social bar -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyBottom" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;border-radius: 0px 0px 5px 5px;width: 600px;padding: 20px 0px 20px 0px;text-align: left;border-bottom: 1px solid #E5E4E2;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td id="linksWrapper" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;">
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<tr>
+								<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=b5169628f5&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><img data-file-id="26185" height="290" src="https://gallery.mailchimp.com/07487d1456302a286cf9c4ccc/images/47458eea-f632-440c-8af9-2127c95b7f19.png" style="border: 0px;width: 550px;height: 290px;margin: 0px;outline: none;" width="550"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+</table>
+&nbsp;
+<!-- footer -->
+<table width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<tr>
+		<td class="footer" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;color: #ff2b06;background-color: #707070;padding: 20px 0px 20px 0px;">
+			<table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+				<tr>
+					<td class="footerContent" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-size: 12px;color: #ffffff;">
+						You are receiving this email because you've subscribed to our mailing list.<br>
+						We also send out <a href="http://ted.us1.list-manage.com/profile?u=07487d1456302a286cf9c4ccc&id=934d447288&e=4212952d24" style="text-decoration: underline;color: #ffffff;font-weight: bold;">daily emails</a>, if you can't get enough of us. We love you too.<br><br>
+						<em>Copyright &copy; 2017 TED, All rights reserved.</em>
+						<br>
+						
+						You're receiving the TED Talks weekly newsletter because you subscribed to it on TED.com. (Was this forwarded by a friend? You can sign up here: http://www.ted.com/newsletter )
+						<br><br>
+						<strong>Our mailing address is:</strong><br>
+						<div class="vcard"><span class="org fn">TED</span><div class="adr"><div class="street-address">330 Hudson Street</div><div class="extended-address">11th Floor</div><span class="locality">New York</span>, <span class="region">NY</span>  <span class="postal-code">10013</span></div><br><a href="http://ted.us1.list-manage1.com/vcard?u=07487d1456302a286cf9c4ccc&id=934d447288" class="hcard-download">Add us to your address book</a></div>
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="footerContent" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-size: 12px;color: #ffffff;">
+						<br>
+						<a href="http://ted.us1.list-manage.com/unsubscribe?u=07487d1456302a286cf9c4ccc&id=934d447288&e=4212952d24&c=25da758f34" style="text-decoration: underline;color: #ffffff;font-weight: bold;">unsubscribe from this list</a>&nbsp;&nbsp;
+						<a href="http://ted.us1.list-manage.com/profile?u=07487d1456302a286cf9c4ccc&id=934d447288&e=4212952d24" style="text-decoration: underline;color: #ffffff;font-weight: bold;">update subscription preferences</a>&nbsp;&nbsp;
+						<a href="http://us1.campaign-archive2.com/?u=07487d1456302a286cf9c4ccc&id=25da758f34&e=4212952d24" target="_blank" style="text-decoration: underline;color: #ffffff;font-weight: bold;">view email in browser</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="footerContent" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-size: 12px;color: #ffffff;">
+						<br>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<img src="http://ted.us1.list-manage.com/track/open.php?u=07487d1456302a286cf9c4ccc&id=25da758f34&e=4212952d24" height="1" width="1"></body></html>

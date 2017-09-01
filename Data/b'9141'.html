@@ -1,0 +1,281 @@
+<!--item discussions are nested under items themselves--><!--item discussions are nested under items themselves--><!--Grammatically formats an array of partners into a nice looking string.--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><style type="text/css">/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+/* Force Hotmail to display emails at full width */
+.ReadMsgBody{width:100%;}
+.ExternalClass{width:100%;}
+/* Prevent Yahoo! from styling links */
+.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus{
+    background-color:transparent !important;
+    border:none !important;
+    color:inherit !important;
+}
+/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+body{
+    margin:0;
+    padding:0;
+}
+img{
+    border:0;
+    height:auto;
+    line-height:100%;
+    outline:none;
+    text-decoration:none;
+}
+table, td{
+    border-collapse:collapse !important;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+#bodyTable, #bodyCell{
+    height:100% !important;
+    margin:0;
+    padding:0;
+    width:100% !important;
+}
+#bodyCell{padding:20px;}
+#templateContainer{width:600px;}
+/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+/* ========== Page Styles ========== */
+body, #bodyTable{background-color:#ffffff;}
+#bodyCell{border-top:0;}
+#templateContainer{border:0px solid #FFFFFF;}
+h1{
+    color:#232327 !important;
+    display:block;
+    font-family:Helvetica;
+    font-size:30px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:left;
+}
+h2{
+    color:#232327!important;
+    display:block;
+    font-family:Helvetica;
+    font-size:28px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:left;
+}
+h3{
+    color:#232327!important;
+    display:block;
+    font-family:Helvetica;
+    font-size:18px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:right;
+}
+h4{
+    color:#232327 !important;
+    display:block;
+    font-family:Helvetica;
+    font-size:16px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:100%;
+    letter-spacing:normal;
+    margin-top:0;
+    margin-right:0;
+    margin-bottom:10px;
+    margin-left:0;
+    text-align:left;
+}
+/* ========== Header Styles ========== */
+#templatePreheader{
+    background-color:#FFFFFF;
+    border-bottom:0;
+}
+.preheaderContent{
+    color:#808080;
+    font-family:Helvetica;
+    font-size:16px;
+    line-height:125%;
+    text-align:left;
+}
+.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+    color:#606060;
+    font-weight:normal;
+    text-decoration:underline;
+}
+#templateHeader{
+    background-color:#F4F4F4;
+    border-top:5px solid #FFFFFF;
+    border-bottom:5px solid #FFFFFF;
+}
+.headerContent{
+    color:#505050;
+    font-family:Helvetica;
+    font-size:20px;
+    font-weight:bold;
+    line-height:100%;
+    padding-top:0;
+    padding-right:0;
+    padding-bottom:0;
+    padding-left:0;
+    text-align:left;
+    vertical-align:middle;
+}
+.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+    color:#0367b0;
+    font-weight:normal;
+    text-decoration:underline;
+}
+#headerImage{
+    height:auto;
+    max-width:600px;
+}
+/* ========== Body Styles ========== */
+#templateBody{
+    background-color:#232327;
+    border-top:0;
+    border-bottom:0;
+}
+#bodyContentBlock{
+    background-color:#FFFFFF;
+}
+.bodyContent{
+    color:#505050;
+    font-family:Helvetica;
+    font-size:16px;
+    line-height:150%;
+    padding-top:15px;
+    padding-right:0;
+    padding-bottom:15px;
+    padding-left:0;
+    text-align:left;
+}
+.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+    color:#0367b0;
+    font-weight:normal;
+    text-decoration:underline;
+}
+.bodyContent img{
+    display:inline;
+    height:auto;
+    /*max-width:560px;*/
+}
+/* ========== Footer Styles ========== */
+#templateFooter{
+    background-color:#ffffff;
+    border-top:0;
+}
+.footerContent{
+    color:#808080;
+    font-family:Helvetica;
+    font-size:13px;
+    line-height:150%;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align:center;
+}
+.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+    color:#606060;
+    font-weight:normal;
+    text-decoration:underline;
+}
+.button {
+    text-align: center;
+    font-size: 16px;
+}
+/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+@media only screen and (max-width: 641px){
+    #templateContainer{width:auto !important;}
+}
+@media only screen and (max-width: 480px){
+    /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+    body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+    body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+    /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+    td[id="bodyCell"]{padding:10px !important;}
+    /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+    /* ======== Page Styles ======== */
+    table[id="templateContainer"]{
+      max-width:600px !important;
+      width:100% !important;
+    }
+    h1{
+      font-size:24px !important;
+      line-height:100% !important;
+    }
+    h2{
+      font-size:20px !important;
+      line-height:100% !important;
+    }
+    h3{
+      font-size:18px !important;
+      line-height:100% !important;
+    }
+    h4{
+      font-size:16px !important;
+      line-height:100% !important;
+    }
+    /* ======== Header Styles ======== */
+    table[id="templatePreheader"]{display:none !important;} /* Hide the template preheader to save space */
+    td[class="preheaderContent"] {
+      font-size: 16px;
+    }
+    img[id="headerImage"]{
+      height:auto !important;
+      max-width:600px !important;
+      width:100% !important;
+    }
+    td[class="headerContent"]{
+      font-size:20px !important;
+      line-height:125% !important;
+    }
+    /* ======== Body Styles ======== */
+    td[class="bodyContent"]{
+      font-size:18px !important;
+      line-height:125% !important;
+    }
+    /* ======== Footer Styles ======== */
+    td[class="footerContent"]{
+      font-size:14px !important;
+      line-height:115% !important;
+    }
+}
+</style></head><body marginwidth="0" offset="0" leftmargin="0" topmargin="0" marginheight="0"><center><table id="bodyTable" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" height="100%"><tr><td id="bodyCell" valign="top" align="center"><table id="templateContainer" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; border: 0; background-color: #f6f6f6;"><tr><td valign="top" align="center"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;"><tr><td class="preheaderContent" valign="top" style="padding: 0 0 15px 0"></td></tr></table></td></tr><tr><td valign="top" align="center"><table id="templateBody" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;"><tr><td valign="top" align="center"><table id="bodyContentBlock" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;"><tr><td class="bodyContent" valign="top" style="color:#505050; font-size: 16px; line-height: 150%;padding: 20px 18px 32px"><table style="width: 100%;background-color:#ffffff; font-family: 'Arial'; word-wrap:break-word;" align="left"><tr><td id="CMLContent" style="padding: 28px 38px 0px; word-wrap:break-word;"><div>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>Cheery Friday Greetings to our </strong><strong><em>Learning How to Learn</em></strong><strong>ers!</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>Book of the Month</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Today’s book is a little different from usual. It is <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8yd3VjN2gzP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.zXxiUw09GBMnqLnfiSdwBMPwyY95PZI7prr2ZUrX94A" ><strong><em>The Hidden Life of TREES: What They Feel, How They Communicate</em></strong></a>, by Peter Wohlleben (Audio book <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8ydmJSa1BDP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.jG3G8D7h7168rLlGK81BN72D-GOoVNUvAMAeOACJ7Sw" ><strong>here</strong></a>). We LOVE this best-selling book, which has been optioned for translation into 19 different languages! The <em>New York Times</em> <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5ueXRpbWVzLmNvbS8yMDE2LzAxLzMwL3dvcmxkL2V1cm9wZS9nZXJtYW4tZm9yZXN0LXJhbmdlci1maW5kcy10aGF0LXRyZWVzLWhhdmUtc29jaWFsLW5ldHdvcmtzLXRvby5odG1sP21jdWJ6PTAmdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.4VHQUsxNd9tkRZz2uO4VwGpus5uT9hP2nLVKQzJlXDw" ><strong>review</strong></a> of the article summed up some of the book’s intriguing insights about forest trees as social beings: “They can count, <strong>learn</strong> and remember; nurse sick neighbors; warn each other of danger by sending electrical signals across a fungal network known as the ‘Wood Wide Web’; and, for reasons unknown, keep the ancient stumps of long-felled companions alive for centuries by feeding them a sugar solution through their roots.”</p>
+ <p style="margin-bottom:14px;min-height:20px;">Wohlleben’s use of analogy and metaphor to convey fascinating science is masterful. This is of the best books we’ve read on nature in the last few decades.</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>MOOC of the Week</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">This week, we’re featuring a new MOOC related to intellectual humility from The University of Edinburgh, <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jbGFzcy1jZW50cmFsLmNvbS9tb29jLzkwODUvY291cnNlcmEtcGhpbG9zb3BoeS1zY2llbmNlLWFuZC1yZWxpZ2lvbi1waGlsb3NvcGh5LWFuZC1yZWxpZ2lvbj91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.qMhit_gEhSVjz2u4JfheTj6fQXkAAmZDcymbdu9Gqfo" ><strong>Philosophy and Religion</strong></a>. It will begin on August 28th. This MOOC deals with vitally important topics of excessive certainty. (A fascinating book on that topic, incidentally, is <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYW16bi50by8ydVpaU3NSP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.pVyPUBIfVuXK40IXEIUXjLxFsgUqGq2TCOiwxp1uYqo" ><strong><em>On Being Certain: Believing You Are Right Even When You're Not</em></strong></a>, by Robert Burton.)</p>
+ <p style="margin-bottom:14px;min-height:20px;">We can’t resist also pointing out the MOOC “<a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jbGFzcy1jZW50cmFsLmNvbS9tb29jLzI5MzcvY291cnNlcmEtY2hpY2tlbi1iZWhhdmlvdXItYW5kLXdlbGZhcmU_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.vVUUXmD0ZLIQD7RuQrtvAVjM_Ao1EuUZ9lON0vz2-FI" ><strong>Chicken Behaviour and Welfare</strong></a>,” also from the University of Edinburgh. It just started on August 21st. If you’re into chickens, this MOOC looks like a classic.</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>Barb’s Most Extensive Interview</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3RoZWJlc3RzY2hvb2xzLm9yZy8_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.f9bdUmVJ0OE8q8f-XwdyFpD-JTzC9cBZGXPPBQWfDWg" ><strong>TheBestSchools.org</strong></a> is a leading education resource that covers online and on-campus colleges &amp; universities that include undergraduate, graduate, doctoral, and post-doc programs. In addition, they cover K–12 and select alternative education programs. Take a look here for <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3RoZWJlc3RzY2hvb2xzLm9yZy9mZWF0dXJlcy9iYXJiYXJhLW9ha2xleS1pbnRlcnZpZXcvP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.igLH-Wk3NlX5v1fXJHHWKgJVqOarfFcvAX9es66jZK4" ><strong>TheBestSchools.org’s interview</strong></a> with Barb Oakley—the most extensive interview Barb has ever given.</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>The Complete Guide to Not Going to College</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">We’re always liked the online magazine <em>Quartz</em>, and now we like it even more. Here’s <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3F6LmNvbS8xMDU0MDg3L3RoZS1jb21wbGV0ZS1ndWlkZS10by1ub3QtZ29pbmctdG8tY29sbGVnZS8_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.xL7hpuaimKna0eTM6aoHtLLSF0CzbH2AVwFctriPdfg" ><strong>a great guide</strong></a> to how to learn and be successful <em>without</em> going to college. The article also features quotes from our very own Barb about the value of MOOCs from online providers like Coursera.</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>The Single Easiest Way to Get Unstuck</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Here’s a <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5pbmMuY29tL3ZpZGVvL2JhcmJhcmEtb2FrbGV5L2hvdy10by1vdmVyY29tZS1ldmVyeS1idXNpbmVzcy1iaWdnZXN0LWJsaW5kc3BvdC5odG1sP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.umGpzGHWpZod6gq713iBWi_l-tTtf9pMYlqCEK334vw" ><strong>one-minute video clip</strong></a> from Barb when she was at Inc. headquarters in New York City about the best way to get unstuck in thinking about a problem. (Can you tell it was a hot day in New York?) <strong> </strong></p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>“T” versus “Π” Approaches to Career Building</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Here’s <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3RyYWluaW5nbWFnLmNvbS9wb2RjYXN0cz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.T86qS4Y_92FTZ76leadzZ47tbF_QC1FI6OFf91XO3dI" ><strong>a discussion</strong></a> of the traditional “T”-shaped approach, versus the more modern “Π”-shaped approach to career success, in <em>Training Magazine</em>. It’s all in how you approach your learning!</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>The Diffuse Mode--How It Helps in Problem-Solving</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">If you’re into financial market analysis, you may enjoy this article “<a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vd3d3Lm1zbi5jb20vZW4taWUvbmV3cy9vdGhlci90aGUtbmV4dC1jcmFzaC1yaXNrLWlzLWhpZGluZy1pbi1wbGFpbi1zaWdodC9hci1BQXBQdWtyP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.RimrdODUnOhIIA2oU1hraENq-kJ8E2mhyct0o42OBlc" ><strong>The next crash risk is hiding in plain sight</strong></a>,” on how the diffuse mode can help you better understand risk. [Hat tip, LHTLer Jim Embury.]</p>
+ <p style="margin-bottom:14px;min-height:20px;"><strong>That’s all for this week. Have a happy week in</strong><strong><em> Learning How to Learn</em></strong><strong>!</strong></p>
+ <p style="margin-bottom:14px;min-height:20px;">Barb, Terry, and the entire <em>Learning How to Learn </em>team <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5mYWNlYm9vay5jb20vTEhUT0wvP2ZyZWY9dHMmdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.VP5CIenYwsywP1rZis9wpfsobTXZfNkY1ySIl_kjOBk" ><strong>Follow LHTL on Facebook</strong></a> | Join the private <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5mYWNlYm9vay5jb20vZ3JvdXBzL0xIMlRMLz9mcmVmPXRzJnV0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.80xawUeDKnN893O_gmizqc6jhq2XtRcSxB0AhmvO_HY" ><strong>LHTL Hall of Fame group</strong></a> | <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3R3aXR0ZXIuY29tL2xodGxfbW9vYz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.SS9V1hPy8UrxE1pGnugM67rg9neIfFjEfUSJAztVcbw" ><strong>Follow LHTL on Twitter</strong></a></p>
+ <p style="margin-bottom:14px;min-height:20px;">See all book recommendations at <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vY2hlZXJ5ZnJpZGF5LmNvbS8_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.ksj4GGXcrJ9Cil8xGrykpEoSzhjy-B8Ca5LQHM8w_88" ><strong>cheeryfriday.com</strong></a></p>
+</div></td></tr><tr><td style="padding: 0px 38px 28px"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvbGVhcm4vbGVhcm5pbmctaG93LXRvLWxlYXJuL2hvbWUvd2VsY29tZT91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.pbkktFTzqovmj1Fe41JqrPSeuL3tybMRnoFMOEJCM54" style="text-decoration: none;vertical-align:top;"><span style="font-size: 16px; min-width: 220px; background-color: #49df98; line-height: 42px; display: inline-block; color: white; border-radius: 4px; text-align: center;margin-top:10px;">Go to course</span></a></td></tr></table></td></tr></table></td></tr></table></td></tr><tr><td valign="top" align="center"><table id="templateFooter" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F6F6F6;font-family: 'Arial';"><tr><td class="footerContent" valign="top" style="padding-top:20px; padding-right:0; padding-bottom:20px; padding-left:0; text-align:center;"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.aW8RzeG35Gqsy6gGbyOJbQs4vLR0G86xfmvjaWOWV7s" ><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/pages/home/template/coursera_logo_small.png" style="height: 18px;"/></a></td></tr><tr><td class="footerContent" style="vertical-align: top; text-align: center;padding-bottom:20px;padding-top:0;padding-left:0;padding-right:0;"><div><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vd3d3LmZhY2Vib29rLmNvbS9Db3Vyc2VyYT91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.anzong_zufjgcXHBGIexKdlxS2pzw7Yw-NCu3nvxl7U" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/facebook.png" alt="facebook" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3R3aXR0ZXIuY29tL2NvdXJzZXJhP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.Xjsxyi9iXz2f_6_SQU6BGmsR0ROE-x3ubUWM2Sk-_Ek" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/twitter.png" alt="twitter" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwOi8vYmxvZy5jb3Vyc2VyYS5vcmcvP3V0bV9tZWRpdW09ZW1haWwmdXRtX3NvdXJjZT1vdGhlciZ1dG1fY2FtcGFpZ249b3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMlN0VvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsInRyYWNraW5nIjp7InVzZXJJZCI6MTA1MTEyMTIsInVzZXJFbWFpbCI6ImVqZWFuYm9yaXNAZ21haWwuY29tIiwibm90aWZpY2F0aW9uVHlwZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNhbXBhaWduSWQiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2ZyIsImNhbXBhaWduR3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyJ9fSwidXNlcklkIjoxMDUxMTIxMn0.ZKWSVi9dm8kffB8zvIjvilauQa5jwNIZfOXmA_YJd6Y" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/blog.png" alt="blog" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3BsdXMuZ29vZ2xlLmNvbS8xMTE5NTA1OTQwMzkyNjkyODE0NjkvcG9zdHM_dXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPW90aGVyJnV0bV9jYW1wYWlnbj1vcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyU3RW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwidHJhY2tpbmciOnsidXNlcklkIjoxMDUxMTIxMiwidXNlckVtYWlsIjoiZWplYW5ib3Jpc0BnbWFpbC5jb20iLCJub3RpZmljYXRpb25UeXBlIjoib3BlbmNvdXJzZS5hbm5vdW5jZW1lbnRzIiwiY2FtcGFpZ25JZCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy40WTE1a0lRZUVlZWd0ZzdSaEd4Q3ZnIiwiY2FtcGFpZ25Hcm91cCI6Im9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzIn19LCJ1c2VySWQiOjEwNTExMjEyfQ.932aFJ-xeDrx-uUqUu4aO4rsECm2KXp-rABIUwF_-eo" rel="nofollow" style="margin: 0 7px;" target="_blank"><img src="https://dt5zaw6a98blc.cloudfront.net/site-static/images/footer/googleplus.png" alt="blog" width="24" style="border: none; width: 24px; height: 24px; opacity: 0.6;" height="24"/></a></div></td></tr><tr><td class="footerContent" style="color:#808080; font-size:12px; line-height:150%; padding: 0 20px 0 20px; text-align:center;"><div>You are receiving this email because ejeanboris@gmail.com is registered to the</div><div>Learning How to Learn: Powerful mental tools to help you master tough subjects course at Coursera.</div></td></tr><!--Helplink--><tr><td class="footerContent" style="color:#808080; font-size:12px; line-height:150%;padding: 0 20px 20px 20px; text-align:center;"><div>Please do not reply directly to this email. If you have any questions or feedback,</div><div>please visit our <a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL2NvdXJzZXJhaGVscC56ZW5kZXNrLmNvbS9oYz91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9.0wE84QDIByBVJbCDGaPT088CzYL22aHUfDJzh3AWcv4" style="color: #606060" target="_blank">support site</a>.</div></td></tr><!--Address--><tr><td class="footerContent" style="color:#808080; font-size:12px; line-height:150%; padding: 0 20px 20px 20px; text-align:center;" valign="top">Copyright (c) 2017 Coursera, Inc&nbsp;|&nbsp;381 E. Evelyn Avenue, Mountain View, CA 94041 USA</td></tr><!--Unsubscribe--><tr><td class="footerContent" valign="top" style="padding:0 20px 20px 20px;text-align:center;"><a href="https://eventing.coursera.org/redirectSigned/eyJrZXkiOiJlbWFpbC5saW5rLm9wZW4iLCJ2YWx1ZSI6eyJ1cmwiOiJodHRwczovL3d3dy5jb3Vyc2VyYS5vcmcvYWNjb3VudC91bnN1YnNjcmliZS9NTFFXVU5mcVEtUlNEVGpQNlpjOHZEaG5YQ0ZCb21LV0FUb2JPM083Z3J5RWVSNVBLaTNuWkdLWk1laFEwdjdLeXdDdGQ5TUR6WDFxV2RtMk5SbXNOdy5zc1dIMEFmbXpmWF9ockNVNWVNWVpBLlI4WHNLUWpkcnkzdHlFcjRLNko3amwyUi1NUjZqRGtEdHROWk5RWmFTNUtUeWU4NHF2SGlCdzF6STYwaVU4YzJzSXVKYU4zZ0tSanZQdGVaNms5Sk9tUkRTLUlmemZKZFJDcmwtQVlrUVo4RTRwNWdTUmZybXA1TktVNWRfZHprdFBOTzB0d29UbkRxZTlaUDNKOHRrQT91dG1fbWVkaXVtPWVtYWlsJnV0bV9zb3VyY2U9b3RoZXImdXRtX2NhbXBhaWduPW9wZW5jb3Vyc2UuR2RlTnJsbDFFZVNST3lJQUN0aVZ2Zy5hbm5vdW5jZW1lbnRzJTdFb3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJ0cmFja2luZyI6eyJ1c2VySWQiOjEwNTExMjEyLCJ1c2VyRW1haWwiOiJlamVhbmJvcmlzQGdtYWlsLmNvbSIsIm5vdGlmaWNhdGlvblR5cGUiOiJvcGVuY291cnNlLmFubm91bmNlbWVudHMiLCJjYW1wYWlnbklkIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLjRZMTVrSVFlRWVlZ3RnN1JoR3hDdmciLCJjYW1wYWlnbkdyb3VwIjoib3BlbmNvdXJzZS5HZGVOcmxsMUVlU1JPeUlBQ3RpVnZnLmFubm91bmNlbWVudHMifX0sInVzZXJJZCI6MTA1MTEyMTJ9._K8XKjbJGu0SQQAlw03-6QCGSMGEKdP5V03iZ_5Ssm4" style="font-size:12px;line-height:150%;font-weight:bold;color: #606060"> unsubscribe from this list</a></td></tr></table></td></tr></table></td></tr></table></center><img src="https://eventing.coursera.org/img/h2PVBD1M1K2FsX7U_6E91gP8vsBYQuFK_O_LYwGuRRvDFWWcpm36mzcqvRljAhVZIUWzRv0xLcOaZOTAP3r9yA.D61-EWt2l-BEHSnPUtTRZg.ElyZ3ZOf43IfrkNe4jidDu6zwtOA5eoApXNZExaGjMZtFxcP9aoNhvjTY_T3khn2_4YllcvcAzqfKj6ajUWiMkrHj0169l8HLFWOscPrVE31zl6SnNzFoy1Wm7N4osZWla7Eao4VXZgiQ5ZDHV1-NVaVw69ThxsekRhEf5bLofq3cBxzX29u5i39DKE7KghMvjEWAhFKUhT7EWXN6NE98h3RtJcj08IKHCr81aQaVPUgOSjIr87HviRTRsQ85n0uI-LrLBOH6F8tzmr38AuYOvleAEBM4QkBg6M9z0FvecrvGNi0fwg_MTrCjagRotvPZUN3BK4GwYjtW80ZJxunmbrPxbmntnJbWuKGs8rfjw3YemNHIXQy5H7jtyEwYxyUga558a48vcfR60q5tqCsJXSHunf8FeelO2k0xHsWLm8" border="0" width="1" height="1">
+<img border="0" width="1" height="1" alt="" src="http://click.mail.coursera.org/q/wJ9u6j7esWNnAnOM_SEnPQ~~/AAAAAQA~/RgRbgo1HPkEIAOy9Becu-AdXCGNvdXJzZXJhWAQAAAAASDhvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuNFkxNWtJUWVFZWVndGc3UmhHeEN2Z0IKAANHCKBZGCYzIVIUZWplYW5ib3Jpc0BnbWFpbC5jb20JUQQAAAAAR-J7ImJpbmRpbmciOiJ0cmFuc2FjdGlvbmFsIiwiY2FtcGFpZ25fZ3JvdXAiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyIsInByZWZlcmVuY2UiOiJvcGVuY291cnNlLkdkZU5ybGwxRWVTUk95SUFDdGlWdmcuYW5ub3VuY2VtZW50cyIsIm5vdGlmaWNhdGlvbl90ZW1wbGF0ZSI6Im9wZW5jb3Vyc2UuYW5ub3VuY2VtZW50cyIsImNoYW5uZWwiOiJFTUFJTCJ9Ew~~">
+</body></html>

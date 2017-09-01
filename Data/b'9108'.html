@@ -1,0 +1,433 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<title>Humble Bundle</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    
+    /* Force Outlook to provide a "view in browser" message */
+    #outlook a {
+      padding: 0;
+    }
+    
+     /* Force Hotmail to display emails at full width */
+    .ReadMsgBody {
+      width: 100%;
+    }
+    
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+    
+    /* Prevent WebKit and Windows mobile changing default text sizes */
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    
+    /* Remove spacing between tables in Outlook 2007 and up */
+    table,
+    td {
+      padding: 0;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    
+    /* Allow smoother rendering of resized image in Internet Explorer */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+    
+    /* RESET STYLES */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+    
+    table {
+      border-collapse: collapse !important;
+    }
+    
+    body {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    
+    /* iOS BLUE LINKS */
+    .appleBody a {
+      color: #68440a;
+      text-decoration: none;
+    }
+
+    .appleFooter a {
+      color: #999999;
+      text-decoration: none;
+    }
+
+    /* Make table widths less succeptible to the whims of the user-agent */
+    table,
+    td {
+      table-layout: fixed;
+    }
+
+    /*MOBILE STYLES */
+    @media screen and (max-width: 642px) {
+      /* ALLOWS FOR FLUID TABLES */
+      table[class="wrapper"],
+      table.wrapper {
+        width: 100% !important;
+      }
+      /* ADJUSTS LAYOUT OF LOGO IMAGE */
+      td[class="logo"],
+      td.logo {
+        text-align: left;
+        padding: 20px 0 20px 0 !important;
+      }
+      td[class="logo"] img,
+      td.logo img {
+        margin: 0 auto!important;
+      }
+      /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+      td[class="mobile-hide"],
+      td.mobile-hide {
+        display: none;
+      } /* This is highly redundant and should be fixed */
+      img[class="mobile-hide"],
+      img.mobile-hide, 
+      .mobile-hide {
+        display: none !important;
+      }
+      img[class="img-max"],
+      img.img-max {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+      img[class="img-fill"],
+      img.img-fill {
+        width: 100% !important;
+        height: auto !important;
+      }
+      /* FULL-WIDTH TABLES */
+      table[class="responsive-table"],
+      table.responsive-table {
+        width: 100% !important;
+      }
+      /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+      td[class="padding"],
+      td.padding {
+        padding: 10px 5% 15px 5% !important;
+      }
+      td[class="padding-copy"],
+      td.padding-copy {
+        padding: 10px 5% 10px 5% !important;
+        text-align: center;
+        display: block;
+      }
+      td[class="padding-copy-left"],
+      td.padding-copy-left {
+        padding: 10px 5% 10px 5% !important;
+        text-align: left;
+        display: block;
+      }
+      td[class="padding-meta"],
+      td.padding-meta {
+        padding: 30px 5% 0px 5% !important;
+        text-align: center;
+      }
+      td[class="no-pad"],
+      td.no-pad {
+        padding: 0 0 20px 0 !important;
+      }
+      td[class="no-padding"],
+      td.no-padding {
+        padding: 0 !important;
+      }
+      td[class="section-padding"],
+      td.section-padding {
+        padding: 10px 10px 10px 10px !important;
+      }
+      td[class="section-header"],
+      td.section-header {
+        padding: 10px 15px 10px 15px !important;
+      }
+      td[class="section-padding-bottom-image"],
+      td.section-padding-bottom-image {
+        padding: 50px 15px 0 15px !important;
+      }
+      /* ADJUST BUTTONS ON MOBILE */
+      td[class="mobile-wrapper"],
+      td.mobile-wrapper {
+        padding: 10px 5% 15px 5% !important;
+      }
+      /* TEMPLATE-SPECIFIC STYLES */
+      /* Smoothly collapse store grid from 2 to 1 column layout */
+      div[class="griditem"],
+      div.griditem {
+        padding-right: 0px !important;
+      }
+      /* Smoothly collapse monthly value items to a vertical layout */
+      td[class="monthly-value"],
+      td.monthly-value {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      /* Switch from left-right justified logo+text to centered logo above text */
+      td[class="store-header"],
+      td.store-header {
+        text-align: center !important;
+        display: inline-block !important;
+        width: 100% !important;
+      }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#e4e7ed;">
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e4e7ed"><tr>
+<td align="center" valign="top" style="padding:10px;"> 
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="622px" class="responsive-table"><tr>
+<td align="center" valign="top" width="100%">
+
+
+
+
+    
+<!-- HIDDEN PREHEADER TEXT -->
+<div style="display: none; font-size: 1px; font-family: Helvetica, Arial, sans-serif; height: 0px; width: 0px; opacity: 0; overflow: hidden;">
+  AND IT'S RIGHT BEHIND YOU!!
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<!-- Brand --><td align="center" class="padding-copy" style="text-align:center">
+      <a data-crdl-variant="" href="http://track.cordial.io/c/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/020e1ba3/50f9941a69dbd00a840aa4bb8931b7b1//">
+        <img src="https://d1ok0qgebci2d3.cloudfront.net/102/183x23/Humble-Bundle-newsletter.png" alt="Humble Bundle" style="border: none;"></a>
+    </td>
+  </tr>
+<tr>
+<td height="6" style="font-size:6px; line-height:6px;"> </td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+<td align="center" width="100%" style="text-align:center;">
+
+<table border="0" cellpadding="0" cellspacing="0" width="622" class="responsive-table">
+<tr>
+<td width="100%" height="20" style="border-top-right-radius:6px; border-top-left-radius:6px; background:#ffffff;">
+    </td>
+  </tr>
+<!--  BUNDLE ITEM MAIN CONTENT WRAPPER  --><tr>
+<td width="100%" style="background:#ffffff;">
+<!-- -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<!-- Logo IMAGE --><td align="center" style="padding: 10px 0 10px 0; text-align:center" class="padding-copy">
+                <a data-crdl-variant="" target="_blank" href="https://www.humblebundle.com/spooky-horror-bundle?linkID=&mcID=102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_22_spookyhorror_bundle&linkID=&utm_content=logo"><img src="https://d1ok0qgebci2d3.cloudfront.net/102/1408x186/spookyhorror_bundle-logo-dark-retina.png" border="0" alt="The Humble Spooky Horror Bundle" width="480" style="margin:0px; border:none; outline:none; padding:0; color:#666666; text-decoration:none; font-family: Helvetica, arial, sans-serif; font-size: large;" class="img-max"></a>
+      </td>
+    </tr>
+<tr>
+<!-- COPY --><td align="center" style="text-align:center; padding: 10px 8px 10px 8px; font-size: large; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
+        Pay what you want for a bundle of awesome horror games.<br>
+(It's never too early to get spoopy, right?)
+      </td>
+    </tr>
+<tr>
+<!-- HERO IMAGE --><td align="center" style="text-align:center; padding: 10px 30px 10px 30px; margin-left: 15px; margin-right: 15px">
+                  <a data-crdl-variant="" target="_blank" href="https://www.humblebundle.com/spooky-horror-bundle?linkID=&mcID=102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_22_spookyhorror_bundle&linkID=&utm_content=hero_image"><img src="https://d1ok0qgebci2d3.cloudfront.net/102/600x580/spookyhorror_bundle_newsletter_grid.png" width="536" border="0" alt="" style="padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: large;" class="img-max"></a>
+      </td>
+    </tr>
+<tr>
+<td align="center" style="text-align:center; padding: 10px 8px 10px 8px; font-size: x-large; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
+        <em>Dead by Daylight, Layers of Fear: Masterpiece<br>
+Edition, Alien: Isolation, Five Nights at Freddy's:<br>
+Sister Location,</em> and more creepy games
+      </td>
+    </tr>
+<tr>
+<td align="center" style="text-align:center; padding: 15px 0 15px 0;">
+        <!-- BULLETPROOF BUTTON -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+<td align="center" style="padding: 5px 0 10px 0;">
+                            <a data-crdl-variant="" target="_blank" style="font-size:x-large; font-family:Helvetica, Arial, sans-serif; font-weight:normal; color:#ffffff; text-decoration:none; background-color:#adcc52; border-top:12px solid #adcc52; border-bottom:12px solid #adcc52; border-left:26px solid #adcc52; border-right:26px solid #adcc52; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; display:inline-block; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);" href="https://www.humblebundle.com/spooky-horror-bundle?linkID=&mcID=102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_22_spookyhorror_bundle&linkID=&utm_content=cta_button">
+                Pay what you want!
+              </a>
+            </td>
+          </tr></table>
+</td>
+    </tr>
+</table>
+<!--  BUNDLE ITEM MAIN CONTENT WRAPPER  -->
+</td>
+</tr>
+<!-- --><tr>
+<td align="center" style="text-align:center; padding: 10px 0 0 0; background:#f4f5f7;">
+      <!-- COPY -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0"><tr>
+<td align="center" style="text-align:center; padding: 20px 0 20px 0; font-size: large; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">Supporting:</td>
+        </tr></table>
+</td>
+  </tr>
+<tr>
+<!-- IMAGE --><td align="center" style="text-align:center; padding: 0; background:#f4f5f7;">
+            <a data-crdl-variant="" target="_blank" href="https://www.humblebundle.com/spooky-horror-bundle?linkID=&mcID=102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_22_spookyhorror_bundle&linkID=&utm_content=charity_logos"><img src="https://d1ok0qgebci2d3.cloudfront.net/102/536x100/spookyhorror_bundle_charities.png" width="536" border="0" alt="Choose Your Own Charity" style="padding: 0;" class="img-max"></a>
+    </td>
+  </tr>
+<tr>
+<td height="26" style="font-size:26px; line-height:26px; border-bottom-right-radius:6px; border-bottom-left-radius:6px; background:#f4f5f7;"> </td>
+  </tr>
+<tr>
+<td height="40" style="font-size:40px; line-height:40px;"> </td>
+  </tr>
+</table>
+</td>
+</tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+<td align="center" width="100%" style="text-align:center;">
+
+<table border="0" cellpadding="0" cellspacing="0" width="622" class="responsive-table">
+<tr>
+<td width="100%" height="20" style="border-top-right-radius:6px; border-top-left-radius:6px; background:#ffffff;">
+    </td>
+  </tr>
+<!--  BUNDLE ITEM MAIN CONTENT WRAPPER  --><tr>
+<td width="100%" style="background:#ffffff;">
+<!-- -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<!-- COPY --><td align="center" style="text-align:center; padding: 10px 8px 10px 8px; font-size: large; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
+        Pay what you want for a bundle of PS3, PS4, &amp; Vita games!
+      </td>
+    </tr>
+<tr>
+<!-- Logo IMAGE --><td align="center" style="padding: 10px 0 10px 0; text-align:center" class="padding-copy">
+                <a data-crdl-variant="" target="_blank" href="https://www.humblebundle.com/2k-playstation-bundle?linkID=&mcID=102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_22_spookyhorror_bundle&linkID=&utm_content=logo"><img src="https://d1ok0qgebci2d3.cloudfront.net/102/1662x162/2kplaystation_bundle-logo-dark-retina.png" border="0" alt="Humble 2K PlayStation Bundle" width="480" style="margin:0px; border:none; outline:none; padding:0; color:#666666; text-decoration:none; font-family: Helvetica, arial, sans-serif; font-size: large;" class="img-max"></a>
+      </td>
+    </tr>
+<tr>
+<td align="center" style="text-align:center; padding: 15px 0 15px 0;">
+        <!-- BULLETPROOF BUTTON -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+<td align="center" style="padding: 5px 0 10px 0;">
+                            <a data-crdl-variant="" target="_blank" style="font-size:x-large; font-family:Helvetica, Arial, sans-serif; font-weight:normal; color:#ffffff; text-decoration:none; background-color:#adcc52; border-top:12px solid #adcc52; border-bottom:12px solid #adcc52; border-left:26px solid #adcc52; border-right:26px solid #adcc52; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; display:inline-block; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);" href="https://www.humblebundle.com/2k-playstation-bundle?linkID=&mcID=102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1&utm_source=Humble+Bundle+Newsletter&utm_medium=email&utm_campaign=2017_08_22_spookyhorror_bundle&linkID=&utm_content=cta_button">
+                Get it now!
+              </a>
+            </td>
+          </tr></table>
+</td>
+    </tr>
+</table>
+<!--  BUNDLE ITEM MAIN CONTENT WRAPPER  -->
+</td>
+</tr>
+<!-- --><tr>
+<td height="26" style="font-size:26px; line-height:26px; border-bottom-right-radius:6px; border-bottom-left-radius:6px; background:#fff;"> </td>
+  </tr>
+<tr>
+<td height="40" style="font-size:40px; line-height:40px;"> </td>
+  </tr>
+</table>
+</td>
+</tr></table>
+<!-- SOCIAL LINKS --><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+<td align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="300" class="responsive-table"><tr>
+<td>
+            
+
+<table id="social-link-table" width="100%"><tr>
+<td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="http://www.facebook.com/humblebundle" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/29x20/FB_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="facebook"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="facebook" href="http://track.cordial.io/c/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/af4834e5/4310dfde471f098349d503f52b81cbf8//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/29x20/FB_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+        <td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="http://www.twitter.com/humble" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/28x21/TW_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="twitter"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="twitter" href="http://track.cordial.io/c/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/5a0ed333/b86f4d148e483704058272a9f21e76bb//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/28x21/TW_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+        <td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="https://plus.google.com/+humblebundle" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/28x20/GPLUS_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="google+"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="google+" href="http://track.cordial.io/c/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/de4915ba/3a21ab79da61bb7dca0e1c9d2f1fe439//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/28x20/GPLUS_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+        <td class="social-link-image-wrapper" width="25%" style="text-align: center;">
+      <!--<a href="{$button.url}" data-crdl-realurl="http://steamcommunity.com/groups/HumbleBundleOfficial" data-crdl-variant="" style="display:block; background-color:white; background-image:url(https://d1ok0qgebci2d3.cloudfront.net/102/28x20/ST_LOGO.png); background-position:center; background-repeat:no-repeat; border:none; border-radius:50%; height:40px; width:40px; margin:0 auto;" title="steam"></a>-->
+      <table border="0" cellspacing="0" cellpadding="0" style="margin:auto;"><tr>
+<td width="40" height="40" align="center" valign="middle" bgcolor="#ffffff" style="background-color:white; border:none; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; text-align:center; vertical-align:middle;">
+            <a data-crdl-variant="" target="_blank" style="display:inline-block; text-decoration:none; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border:1px solid #ffffff;" title="steam" href="http://track.cordial.io/c/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/fe55d9bf/b91b03c46de52050b893f000432be816//">
+              <img src="https://d1ok0qgebci2d3.cloudfront.net/102/28x20/ST_LOGO.png" style="vertical-align:bottom;"></a>
+          </td>
+        </tr></table>
+</td>
+      </tr></table>
+</td>
+        </tr></table>
+</td>
+  </tr></table>
+<!-- FOOTER --><table border="0" cellspacing="0" cellpadding="0" width="100%" align="center" style="background-color: transparent;"><tr>
+<td style="padding: 20px 0px;" align="center">
+    <!-- UNSUBSCRIBE COPY -->
+    <table width="500" border="0" cellspacing="0" cellpadding="0" align="center" class="responsive-table"><tr>
+<td align="center" class="padding-copy" style='font-size: 12px; line-height: 18px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #606060;'>
+              <br> 
+			This email was sent to ejeanboris@gmail.com <br><a class="footer-link" href="https://track.cordial.io/optout/index.php?mcID=102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1" data-crdl-notrack="true" style="color: black;">unsubscribe</a>  | <a data-crdl-variant="" style="color: black;" href="https://track.cordial.io/c/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/b4587662/5e972b17606aa501b738a2dacd84e965//">email preferences</a> | <a data-crdl-variant="" style="color: black;" href="https://track.cordial.io/c/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/798c0a46/082f626e2df246857a8155fa95934ea8//">contact support</a><br>
+			© 2017 Humble Bundle Inc. | 201 Post Street 11th Floor | San Francisco, CA | 94108<br><br>
+</td>
+      </tr></table>
+</td>
+</tr></table>
+</td>
+</tr></table>
+</td>
+</tr></table>
+<img src="http://track.cordial.io/o/p/102:599b56c58eab4e774415c10c:ot:5850696cf7bb513ff1bd2c91:1/b6bf0be481f822e5e03b0c67408f7ce7" height=1 width=1 />
+<img border="0" width="1" height="1" alt="" src="http://sptrack.mailer.humblebundle.com/q/olV4efNHuLKTiR6-_-ikVA~~/AAAAAQA~/RgRbfvk6PkEIASy9Bh2_qDFXB2NvcmRpYWxYBAAAAA1CCgAEOnScWXCC0b1SFGVqZWFuYm9yaXNAZ21haWwuY29tCVEEAAAAAEdpeyJiaW5kaW5nIjoiaGItZCIsImVudiI6InByb2R1Y3Rpb24iLCJtY0lEIjoiMTAyOjU5OWI1NmM1OGVhYjRlNzc0NDE1YzEwYzpvdDo1ODUwNjk2Y2Y3YmI1MTNmZjFiZDJjOTE6MSJ9">
+</body>
+</html>
+

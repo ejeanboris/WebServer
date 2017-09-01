@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="twitter:image:src" content="https://pe.tedcdn.com/images/ted/0af26f90fe58894667b11f326a16b709611ae2f9_800x600.jpg"><meta name="twitter:description" content="Algorithms decide who gets a loan, who gets a job interview, who gets insurance and much more -- but they don't automatically make things fair. Mathematician and data scientist Cathy O'Neil coined a term for algorithms that are secret, important and harmful: &quot;weapons of math destruction.&quot; Learn more about the hidden agendas behind the formulas."><meta name="twitter:title" content="Cathy O'Neil: Weapons of math destruction"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="article"><meta property="og:description" content="Algorithms decide who gets a loan, who gets a job interview, who gets insurance and much more -- but they don't automatically make things fair. Mathematician and data scientist Cathy O'Neil coined a term for algorithms that are secret, important and harmful: &quot;weapons of math destruction.&quot; Learn more about the hidden agendas behind the formulas."><meta property="og:image" content="https://pe.tedcdn.com/images/ted/0af26f90fe58894667b11f326a16b709611ae2f9_800x600.jpg"><meta property="og:title" content="Cathy O'Neil: Weapons of math destruction"><meta property="og:url" content="http://eepurl.com/c03jGv">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weapons of math destruction</title>
+	
+<style type="text/css">
+		body{
+			margin:0;
+			padding:0;
+			padding-bottom:40px;
+			width:100%;
+			font-family:Helvetica, Arial;
+			background:#EEEAE7;
+			font-size:16px;
+			line-height:130%;
+		}
+	@media only screen and (max-width: 600px){
+		body{
+			font-size:20px;
+			!important;
+			line-height:130%;
+		}
+
+}		a,a:visited{
+			text-decoration:none;
+			color:#ff2b06;
+			font-weight:bold;
+		}
+		.convoLink a{
+			color:#000001;
+		}
+		.convoLink a:hover{
+			text-decoration:underline;
+		}
+		h1{
+			font-size:26px;
+			line-height:130%;
+		}
+	@media only screen and (max-width: 600px){
+		h1{
+			font-size:30px;
+			!important;
+			line-height:130%;
+		}
+
+}		h2{
+			font-size:20px;
+			line-height:130%;
+			-webkit-margin-before:0px;
+		}
+		h2 a,h2 a:visited,h2 a:link,h2 a:hover,h2 a:active{
+			color:#000001;
+		}
+	@media only screen and (max-width: 600px){
+		h2{
+			font-size:26px;
+			!important;
+			line-height:130%;
+		}
+
+}		a h1,a:visited h1,a:link h1,a:active h1,a:hover h1{
+			color:#000001;
+			text-decoration:none;
+			text-align:left;
+		}
+		h3{
+			font-size:14px;
+			font-weight:bold;
+			color:#aaaaaa;
+			text-transform:uppercase;
+		}
+		h3 a,h3 a:link,h3 a:visited{
+			color:#aaaaaa;
+		}
+		h4{
+			font-weight:bold;
+			line-height:100%;
+		}
+		img{
+			border:0;
+			height:auto;
+			outline:none;
+		}
+		.imgBorder{
+			position:relative;
+			float:left;
+			background:#ffffff;
+			padding:6px;
+			margin-right:9px;
+			-webkit-border-radius:2px;
+			-moz-border-radius:2px;
+			border-radius:2px;
+			-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+			-o-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow:0 1px 1px rgba(0,0,0,0.3);
+			box-shadow:0 1px 1px rgba(0,0,0,0.3);
+		}
+		table,td{
+			border-collapse:collapse;
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+	@media only screen and (max-width: 600px){
+		table{
+			width:100% !important;
+		}
+
+}		.preheader{
+			background-color:#707070;
+			border-bottom:2px solid #5a5a5a;
+			color:#ffffff;
+			font-size:12px;
+			padding:10px;
+			text-align:right;
+		}
+		.preheader a{
+			color:#ffffff;
+			text-decoration:underline !important;
+		}
+	@media only screen and (max-width: 600px){
+		div[id=preheader]{
+			display:none !important;
+			padding:10px 20px 10px 20px !important;
+		}
+
+}		.headerBlock{
+			margin:25px 0px 25px 0px;
+			width:600px;
+		}
+		.dateLabel{
+			font-size:12px;
+			color:#aaaaaa;
+			font-style:italic;
+			font-weight:bold;
+			line-height:100%;
+			letter-spacing:normal;
+			text-transform:uppercase;
+			text-align:right;
+			padding-top:5px;
+		}
+		.headerLabel{
+			font-size:16px;
+			font-style:normal;
+			font-weight:bold;
+			line-height:100%;
+			letter-spacing:normal;
+			text-transform:uppercase;
+			text-align:right;
+			color:#000;
+		}
+		.headerLabel a,.headerLabel a:link,.headerLabel a:visited{
+			color:#000001;
+		}
+		.dotBreaker{
+			display:inline-block;
+			color:#ff2b06;
+		}
+		.contentBodyTop{
+			background:#FFFFFF;
+			border-radius:5px 5px 0px 0px;
+			width:600px;
+			padding:20px 20px 20px 20px;
+			text-align:left;
+			border-bottom:1px solid #E5E4E2;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBodyTop{
+			border-radius:0 !important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.contentBody{
+			background:#FFFFFF;
+			width:600px;
+			padding:20px 20px 20px 20px;
+			text-align:left;
+			border-top:1px solid #ffffff;
+			border-bottom:1px solid #E5E4E2;
+			margin-top:1px;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBody{
+			border-radius:0 !important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.contentBodyAlt{
+			background:#F7F5F3;
+			width:600px;
+			padding:20px 20px 20px 20px;
+			text-align:left;
+			border-top:1px solid #ffffff;
+			border-bottom:1px solid #E5E4E2;
+			margin-top:1px;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBodyAlt{
+			border-radius:0 !important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.contentBodyBottom{
+			background:#FFFFFF;
+			border-radius:0px 0px 5px 5px;
+			width:600px;
+			padding:20px 0px 20px 0px;
+			text-align:left;
+			border-bottom:1px solid #E5E4E2;
+			box-shadow:#d3d2d1 1px 1px 2px 0px;
+			-moz-box-shadow:1px 1px 2px #d3d2d1;
+			-webkit-box-shadow:1px 1px 2px #d3d2d1;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')";
+			filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');
+		}
+	@media only screen and (max-width: 600px){
+		.contentBodyBottom{
+			border-radius:0!important;
+			width:100% !important;
+			font-size:18px;
+		}
+
+}		.oneup{
+			padding:20px 20px 20px 20px;
+			display:block;
+			position:relative;
+		}
+		.gridText{
+			max-width:95%;
+			padding:0px 10px 10px 10px;
+		}
+	@media only screen and (max-width: 600px){
+		.gridText{
+			max-width:100% !important;
+		}
+
+}		.gridText{
+			max-width:95%;
+			padding:0px 10px 10px 10px;
+		}
+	@media only screen and (max-width: 600px){
+		.gridText{
+			max-width:100% !important;
+		}
+
+}		.gridLeft{
+			position:relative;
+			float:left;
+			width:50%;
+		}
+	@media only screen and (max-width: 600px){
+		.gridLeft{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.gridRight{
+			position:relative;
+			float:right;
+			width:50%;
+		}
+	@media only screen and (max-width: 600px){
+		.gridRight{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.twoThirdLeft{
+			position:relative;
+			float:left;
+			width:360px;
+		}
+	@media only screen and (max-width: 600px){
+		.twoThirdLeft{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.oneThirdRight{
+			position:relative;
+			float:right;
+			width:180px;
+		}
+	@media only screen and (max-width: 600px){
+		.oneThirdRight{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.oneThirdLeft{
+			position:relative;
+			float:left;
+			width:150px;
+		}
+	@media only screen and (max-width: 600px){
+		.oneThirdLeft{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.twoThirdRight{
+			position:relative;
+			float:right;
+			width:380px;
+		}
+	@media only screen and (max-width: 600px){
+		.twoThirdRight{
+			float:none !important;
+			width:100% !important;
+		}
+
+}		.featureFlag{
+			display:block;
+			background-color:#F7C64A;
+			background-image:-moz-linear-gradient(0% 100% 90deg, #f7aa4a, #f7c64a);
+			color:#000;
+			border-bottom:1px solid #a8a8a8;
+			border-right:1px solid #a8a8a8;
+			text-shadow:1px 1px 0 #FBD7A4;
+			font-weight:bold;
+			font-size:14px;
+			text-transform:uppercase;
+			padding:6px 12px;
+			margin:0px 0px 20px -24px;
+			width:150px;
+		}
+		.talkVideoLink{
+			display:block;
+			margin:10px 0;
+			position:relative;
+			text-align:center;
+		}
+		.talkVideoLink:after{
+			background:url(http://pl.tedcdn.com/newsletter_assets/weekly/bgWatchVideo.png);
+			content:" ";
+			display:block;
+			height:36px;
+			left:50%;
+			margin:-18px 0 0 -25px;
+			position:absolute;
+			top:50%;
+			width:51px;
+		}
+	@media only screen and (max-width: 600px){
+		.talkVideoScreen{
+			width:100% !important;
+		}
+
+}		.meta{
+			color:#AAAAAA;
+			font-size:12px;
+			line-height:120%;
+			margin:1em 0;
+		}
+		#button{
+			font-family:Helvetica;
+			background-color:#ff2b06;
+			border:0;
+			border-radius:3px;
+			padding:8px;
+			text-align:center;
+			background-image:linear-gradient(top, #DF4040 1%, #B61D1D 100%);
+			width:180px;
+		}
+		#button a,#button a:active,#button a:link,#button a:visited,#button a:hover{
+			color:#FFFFFF;
+			text-align:center;
+			text-decoration:none;
+			font-weight:normal;
+			display:block;
+			text-shadow:0 -1px 0 rgba(0, 0, 0, .2);
+		}
+		.quoteMark{
+			color:#AAAAAA;
+			font-family:Arial;
+			font-size:80px;
+			padding:35px 10px 0 0;
+		}
+		hr{
+			border:1px solid #ffffff;
+			margin:20px 10px 20px 10px;
+		}
+		.footer{
+			color:#ff2b06;
+			background-color:#707070;
+			padding:20px 0px 20px 0px;
+		}
+		.footerContent{
+			font-size:12px;
+			color:#ffffff;
+		}
+		.footerContent a{
+			color:#ffffff;
+			text-decoration:underline;
+		}
+		#linksWrapper{
+			padding:20px 20px 20px 20px;
+		}
+		#links{
+			min-width:540px;
+		}
+		.linkImage,.linkText{
+			border-bottom:1px solid #FFFFFF;
+			color:#000001;
+			font-size:14px;
+			line-height:140%;
+			padding:10px;
+		}
+		.linkImage{
+			width:16px;
+		}
+		.linkText{
+			padding-left:0;
+		}
+		.linkText a,.linkText a:active,.linkText a:link,.linkText a:visited,.linkText a:hover{
+			color:#000001;
+			font-weight:bold;
+		}
+</style></head>
+
+<body style="margin: 0;padding: 0;padding-bottom: 40px;width: 100%;font-family: Helvetica, Arial;background: #EEEAE7;font-size: 16px;line-height: 130%;"><div itemscope="" itemtype="http://schema.org/EmailMessage"><div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><meta itemprop="name" content="TED"><link itemprop="url" content="http://www.ted.com/newsletter"></div><div itemprop="about" itemscope="" itemtype="http://schema.org/Offer"><link itemprop="image" href="https://pe.tedcdn.com/images/ted/0af26f90fe58894667b11f326a16b709611ae2f9_800x600.jpg"></div></div>
+<table align="center" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<!-- pre header -->
+	<!--
+ -->
+	<tr>
+		<td align="center" class="preheader" mc:label="display" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #707070;border-bottom: 2px solid #5a5a5a;color: #ffffff;font-size: 12px;padding: 10px;text-align: right;">Blind faith in big data must end. <a href="http://mailchi.mp/ted/weekly_mathdestruction?e=4212952d24" target="_blank" style="text-decoration: underline !important;color: #ffffff;font-weight: bold;">Open in your browser</a></td>
+	</tr>
+	<!--
+ -->
+</table>
+
+<table align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<!-- headerblock -->
+	<tr>
+		<td align="center" mc:label="header" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="headerBlock" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;margin: 25px 0px 25px 0px;width: 600px;">
+				<tr>
+					<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+						<a href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=93c3d2fd0c&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">
+						<img src="http://pl.tedcdn.com/newsletter_assets/weekly/TEDlogo_80px.png" alt="TED" mc:label="header_image" mc:allowdesigner="" mc:allowtext="" style="border: 0;height: auto;outline: none;">
+					</a>
+					</td>
+					<td align="right" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+						<div class="headerLabel" mc:label="mailHeader" style="font-size: 16px;font-style: normal;font-weight: bold;line-height: 100%;letter-spacing: normal;text-transform: uppercase;text-align: right;color: #000;">This week on TED.com</div>
+						<div class="dateLabel" style="font-size: 12px;color: #aaaaaa;font-style: italic;font-weight: bold;line-height: 100%;letter-spacing: normal;text-transform: uppercase;text-align: right;padding-top: 5px;">August 26, 2017</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- contents -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyTop" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;border-radius: 5px 5px 0px 0px;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-bottom: 1px solid #E5E4E2;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr>
+					<td class="oneup" mc:label="featured" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h1 style="font-size: 26px;line-height: 130%;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=862ba9b640&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><span style="color:#000000">Cathy O&#39;Neil: Weapons of math destruction</span></a><span style="color:#000000">&nbsp;</span></h1>
+<a class="talkVideoLink" href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=89b7fd3811&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/0af26f90fe58894667b11f326a16b709611ae2f9_800x600.jpg" width="100%" style="border: 0;height: auto;outline: none;"> </a>
+
+<p class="meta" style="color: #AAAAAA;font-size: 12px;line-height: 120%;margin: 1em 0;">13:18 minutes &middot; Filmed Apr 2017 &middot; Posted Aug 2017 &middot; TED2017</p>
+
+<p>Algorithms decide who gets a loan, who gets a job interview, who gets insurance and much more -- but they don&#39;t automatically make things fair. Mathematician and data scientist Cathy O&#39;Neil coined a term for algorithms that are secret, important and harmful: &quot;weapons of math destruction.&quot; Learn more about the hidden agendas behind the formulas.</p>
+
+<div id="button" style="background: #ff2b06 linear-gradient(top, #DF4040 1%, #B61D1D 100%);font-family: Helvetica;background-color: #ff2b06;border: 0;border-radius: 3px;padding: 8px;text-align: center;background-image: linear-gradient(top, #DF4040 1%, #B61D1D 100%);width: 180px;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=9e2f6580c6&e=4212952d24" target="_blank" style="text-decoration: none;color: #FFFFFF;font-weight: normal;text-align: center;display: block;text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);">Watch now &raquo;</a></div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- playlist of the week -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyAlt" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #F7F5F3;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="playlist" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=705a6cdaed&e=4212952d24" target="_blank" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">Playlist of the week</a></h3>
+
+<div class="oneThirdLeft" style="position: relative;float: left;width: 150px;"><a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=c016a8b65c&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><img align="left" class="imgBorder" src="http://pf.tedcdn.com/images/playlists/secrets-to-understanding-the-world_1398219154_146x146.jpg" style="border: 0;height: auto;outline: none;position: relative;float: left;background: #ffffff;padding: 6px;margin-right: 9px;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);-o-box-shadow: 0 1px 1px rgba(0,0,0,0.3);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);box-shadow: 0 1px 1px rgba(0,0,0,0.3);"> </a></div>
+
+<div class="twoThirdRight" style="position: relative;float: right;width: 380px;">
+<h2 style="font-size: 20px;line-height: 130%;-webkit-margin-before: 0px;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=d0805df89f&e=4212952d24" target="_blank" style="text-decoration: none;color: #000001;font-weight: bold;"><span style="color:#000000">Secrets to understanding life</span></a></h2>
+
+<p>From work and happiness, to love and success (and everything else in between), these 10 talks offer insights on some of life&#39;s biggest secrets. <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=98541ea345&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+
+<p class="meta" style="color: #AAAAAA;font-size: 12px;line-height: 120%;margin: 1em 0;">10 TED Talks &bull; Total run time 2:32:27</p>
+</div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- more talks -->	
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyAlt" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #F7F5F3;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="moreTalks" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=548d641427&e=4212952d24" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">This week&#39;s new&nbsp;TED Talks</a>&nbsp;(a few more than usual)</h3>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<tbody>
+		<tr>
+			<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><!--ONE-->
+			<div class="gridLeft" style="position: relative;float: left;width: 50%;"><a class="talkVideoLink" href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=482067b349&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/163298eab035387772ec453f85a8b8cc018823d4_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">&quot;Music is everywhere, and it is in everything,&quot; says musician and college&nbsp;student Anika Paulson. Guitar in hand, she plays through the beats of her life in an exploration of how music connects us and makes us what we are. <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=471f6928eb&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+
+			<div class="gridRight" style="position: relative;float: right;width: 50%;"><!--TWO--><a class="talkVideoLink" href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=32ba07e430&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/20bfc804bc5a8842e70db439ca966d31bc5cbe80_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">Imagine a&nbsp;computer&nbsp;that can emulate the human brain, in all its complex thoughts and processes. What might it want? Social scientist Robin Hanson plays out a future scenario starring the &quot;ems&quot; -- emulated brains that can think, feel and work like the human brains they&#39;re copied from. Enjoy this rapid-fire, mind-blowing glimpse at a hypothetical future.&nbsp;<a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=4402cc09aa&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<div class="gridLeft" style="position: relative;float: left;width: 50%;"><!--THREE--><a class="talkVideoLink" href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=f376fb83e6&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/ec17cc11cc76b64e6ffc210a54634859abc54152_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">Your cells are coated with sugars that store information and speak a secret language. What are they trying to tell us? Your blood type, for one -- and, maybe, that you have cancer. Chemical biologist Carolyn Bertozzi researches how sugars on cancerous cells interact with (and sometimes trick) your immune system. Learn more about how your body detects cancer, and how the latest cancer-fighting medicines could help your immune system beat the disease. <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=60869e47f1&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+
+			<div class="gridRight" style="position: relative;float: right;width: 50%;"><!--FOUR--><a class="talkVideoLink" href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=c3c0a5f3b7&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/d05974a6fdc171072cf0f2c9747cfcc38c30e86b_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">Should your driverless car kill you -- if it means sparing the lives of five pedestrians? In this useful primer on the moral dilemmas&nbsp;of driverless cars, Iyad Rahwan explores how new technology can challenge our own&nbsp;morality. In his lab, he asks real people to make the&nbsp;same moral judgments we&#39;re going to expect from our cars -- and his ongoing work reveals&nbsp;the ethical trade-offs we&#39;re willing (and not willing) to make.&nbsp;<a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=8cc17f7601&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<tbody>
+		<tr>
+			<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><!--ONE-->
+			<div class="gridLeft" style="position: relative;float: left;width: 50%;"><a class="talkVideoLink" href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=f774f0ab44&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/e2e446c3b013ff88a34ae207c22975cc40de5aa5_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">With charm and searching insight, poet David Whyte meditates on the frontiers of the past, present and future, sharing two long-form poems inspired by a hike along El Camino de Santiago. Make quiet time to watch and savor.&nbsp;<a href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=452b820edf&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+
+			<div class="gridRight" style="position: relative;float: right;width: 50%;"><!--TWO--><a class="talkVideoLink" href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=5d74a0d1a5&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;display: block;margin: 10px 0;position: relative;text-align: center;"><img class="talkVideoScreen" src="https://pe.tedcdn.com/images/ted/945298acdd3763e913a0b7111768b271f8a65875_240x180.jpg" width="95%" style="border: 0;height: auto;outline: none;"> </a>
+
+			<p class="gridText" style="max-width: 95%;padding: 0px 10px 10px 10px;">Every artist has a name, and every artist has a story. Laolu Senbanjo&#39;s story started in Nigeria, where he was surrounded by the culture and mythology of the Yoruba. He shares what he calls the Sacred Art of the Ori,&nbsp;art that uses skin as canvas and connects artist and muse through mind, body and soul. <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=43bce084ba&e=4212952d24" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Watch &raquo;</a></p>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- news -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBody" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="news" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=0197a04d70&e=4212952d24" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">Read more on ideas.ted.com</a></h3>
+
+<div><a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=601eed5a4b&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><span style="color:#000000"><strong>We humans:</strong></span></a> Understanding the mysteries of <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=37a80ccd52&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">heartbreak&nbsp;&raquo;</a><br>
+<em>When love ends, why does it hurt so much? &nbsp;</em><br>
+<br>
+<a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=1527f49df5&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><span style="color:#000000"><strong>Science:</strong></span></a>&nbsp;Should we use gene editing to produce <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=ba431ec5aa&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">disease-free babies?</a><br>
+<em>A scientist who helped discover CRISPR weighs in</em><br>
+<br>
+<a href="http://ted.us1.list-manage2.com/track/click?u=07487d1456302a286cf9c4ccc&id=23ed6d9a94&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><span style="color:#000000"><strong>Quiz: </strong></span></a>Can you match the president to the <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=4c027f8279&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">eye chart?</a><br>
+<em>An unusual and revealing look at US history</em><br>
+<br>
+<a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=5acc8b5413&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><img data-file-id="29785" height="271" src="https://gallery.mailchimp.com/07487d1456302a286cf9c4ccc/images/16db9923-e916-4119-9a8e-786246026e0d.gif" style="border: 0px;width: 550px;height: 271px;margin: 0px;outline: none;" width="550"></a></div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+    <!-- advertisement -->
+	<tr>
+		<td align="center" mc:label="advertisement" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"></td>
+	</tr>
+
+	<!-- quote -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyAlt" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #F7F5F3;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="quote" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=c46418aeb4&e=4212952d24" target="_blank" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">Quote of the Week</a></h3>
+
+<table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<tbody>
+		<tr>
+			<td class="quoteMark" valign="top" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;color: #AAAAAA;font-family: Arial;font-size: 80px;padding: 35px 10px 0 0;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=c35796a37d&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">&ldquo;</a></td>
+			<td class="quoteBody bodyContent" valign="top" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<p>Everyone uses algorithms. They just don&#39;t write them in code. Let me give you an example. I use an algorithm every day to make a meal for my family. The data I use is the ingredients in my kitchen, the time I have, the ambition I have. My definition of success is: a meal is successful if my kids eat vegetables. It&#39;s very different from if my youngest son were in charge. He&#39;d say success is if he gets to eat lots of Nutella. But I get to choose success. I am in charge. My opinion matters. That&#39;s the first rule of algorithms. Algorithms are opinions embedded in code.&quot;</p>
+
+			<table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+				<tbody>
+					<tr>
+						<td valign="top" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=5fb29d2830&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;"><span style="color:#000000"><strong>Cathy O&#39;Neil</strong></span><br>
+						The era of blind faith in big data must end</a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- distribution -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBody" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;width: 600px;padding: 20px 20px 20px 20px;text-align: left;border-top: 1px solid #ffffff;border-bottom: 1px solid #E5E4E2;margin-top: 1px;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td class="oneup" mc:label="distribution" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;display: block;position: relative;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=24c57f7e24&e=4212952d24" target="_blank" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">ted radio hour: Hardwired</a></h3>
+
+<div class="twoThirdLeft" style="position: relative;float: left;width: 360px;">How much of who we are is biology? How much is learned? And how much can we change? This week on the <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=9e5de5431c&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">TED Radio Hour</a>, explore how genes and experience collaborate -- and compete -- to make us who we are. Listen now on <a href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=88f6f8a5a3&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Apple Podcasts</a>, the <a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=a4ebb1131f&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">TED Android app</a>, or wherever you get your podcasts.
+
+<p>&nbsp;</p>
+</div>
+
+<div class="oneThirdRight" style="margin-top: -50px;position: relative;float: right;width: 180px;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=c2a6aad90d&e=4212952d24" style="color: #ff0000;text-decoration: none;font-weight: bold;" target="_blank"><img alt="" border="0" height="150" src="http://pl.tedcdn.com/newsletter_assets/daily/NPR-logo.png" style="border: 0;display: block;padding-top: 20px;height: auto;outline: none;" width="180"> </a></div>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<!-- social bar -->
+	<tr>
+		<td align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			<table class="contentBodyBottom" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background: #FFFFFF;border-radius: 0px 0px 5px 5px;width: 600px;padding: 20px 0px 20px 0px;text-align: left;border-bottom: 1px solid #E5E4E2;box-shadow: #d3d2d1 1px 1px 2px 0px;-moz-box-shadow: 1px 1px 2px #d3d2d1;-webkit-box-shadow: 1px 1px 2px #d3d2d1;-ms-filter: &quot;progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1')&quot;;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#d3d2d1');">
+				<tr valign="top">
+					<td id="linksWrapper" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 20px 20px 20px 20px;">
+						<table cellspacing="0" cellpadding="0" border="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<tr>
+								<td style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><h3 style="font-size: 14px;font-weight: bold;color: #aaaaaa;text-transform: uppercase;"><a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=9818d1cd57&e=4212952d24" target="_blank" style="text-decoration: none;color: #aaaaaa;font-weight: bold;">Sincerely, x: Rescued by ritual</a></h3>
+
+<p>This week on TED&#39;s audio podcast <em>Sincerely, X</em>: How one woman found a way to heal the trauma of a violent marriage. Tune in to hear how she created a private ritual, which her doctor now recognizes and recommends as a tool for recovery from abuse. Available now on&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://itunes.apple.com/us/podcast/episode-6-rescued-by-ritual/id1238801741?i%3D1000391419628%26mt%3D2&amp;source=gmail&amp;ust=1503839135484000&amp;usg=AFQjCNFg5NDRPKADOzuKnxvIc_SyJwefdw" href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=13d2d985bf&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">Apple Podcasts</a>, the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://play.google.com/store/apps/details?id%3Dcom.ted.android%26referrer%3Dutm_source%253Dwebpage%2526utm_medium%253Dbutton%2526utm_content%253DsincerelyX%2526utm_campaign%253DsincerelyX&amp;source=gmail&amp;ust=1503839135484000&amp;usg=AFQjCNHSCT0rBIleIO8ddBI_vgNyZm4P3g" href="http://ted.us1.list-manage1.com/track/click?u=07487d1456302a286cf9c4ccc&id=6be3984d83&e=4212952d24" target="_blank" style="text-decoration: none;color: #ff2b06;font-weight: bold;">TED Android app</a>, or wherever you get your podcasts.&nbsp;</p>
+<a href="http://ted.us1.list-manage.com/track/click?u=07487d1456302a286cf9c4ccc&id=b93d2ee1b8&e=4212952d24" style="color: #ff0000;text-decoration: none;font-weight: bold;" target="_blank"><img border="0" data-file-id="29701" height="317" src="https://gallery.mailchimp.com/07487d1456302a286cf9c4ccc/images/08e3b310-e708-4226-b292-7e5805051b57.png" style="border: 0px;display: block;padding-top: 10px;padding-bottom: 10px;width: 550px;height: 317px;margin: 0px;outline: none;" width="550"> </a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+</table>
+&nbsp;
+<!-- footer -->
+<table width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+	<tr>
+		<td class="footer" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;color: #ff2b06;background-color: #707070;padding: 20px 0px 20px 0px;">
+			<table style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+				<tr>
+					<td class="footerContent" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-size: 12px;color: #ffffff;">
+						You are receiving this email because you've subscribed to our mailing list.<br>
+						We also send out <a href="http://ted.us1.list-manage.com/profile?u=07487d1456302a286cf9c4ccc&id=934d447288&e=4212952d24" style="text-decoration: underline;color: #ffffff;font-weight: bold;">daily emails</a>, if you can't get enough of us. We love you too.<br><br>
+						<em>Copyright &copy; 2017 TED, All rights reserved.</em>
+						<br>
+						
+						You're receiving the TED Talks weekly newsletter because you subscribed to it on TED.com. (Was this forwarded by a friend? You can sign up here: http://www.ted.com/newsletter )
+						<br><br>
+						<strong>Our mailing address is:</strong><br>
+						<div class="vcard"><span class="org fn">TED</span><div class="adr"><div class="street-address">330 Hudson Street</div><div class="extended-address">11th Floor</div><span class="locality">New York</span>, <span class="region">NY</span>  <span class="postal-code">10013</span></div><br><a href="http://ted.us1.list-manage2.com/vcard?u=07487d1456302a286cf9c4ccc&id=934d447288" class="hcard-download">Add us to your address book</a></div>
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="footerContent" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-size: 12px;color: #ffffff;">
+						<br>
+						<a href="http://ted.us1.list-manage.com/unsubscribe?u=07487d1456302a286cf9c4ccc&id=934d447288&e=4212952d24&c=ed9fdc7a15" style="text-decoration: underline;color: #ffffff;font-weight: bold;">unsubscribe from this list</a>&nbsp;&nbsp;
+						<a href="http://ted.us1.list-manage.com/profile?u=07487d1456302a286cf9c4ccc&id=934d447288&e=4212952d24" style="text-decoration: underline;color: #ffffff;font-weight: bold;">update subscription preferences</a>&nbsp;&nbsp;
+						<a href="http://mailchi.mp/ted/weekly_mathdestruction?e=4212952d24" target="_blank" style="text-decoration: underline;color: #ffffff;font-weight: bold;">view email in browser</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="footerContent" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-size: 12px;color: #ffffff;">
+						<br>
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<img src="http://ted.us1.list-manage.com/track/open.php?u=07487d1456302a286cf9c4ccc&id=ed9fdc7a15&e=4212952d24" height="1" width="1"></body></html>

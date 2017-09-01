@@ -1,0 +1,1919 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0; 
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; }
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; }
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: auto !important;
+        width: 580px; }
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; }
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        border-radius: 3px;
+        width: 100%; }
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; }
+      .footer {
+        clear: both;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%; }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; }
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;}
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 15px; }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+      a {
+        color: #3498db;
+        text-decoration: underline; }
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;}
+      .btn-primary table td {
+        background-color: #3498db; }
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; }
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+      .first {
+        margin-top: 0; }
+      .align-center {
+        text-align: center; }
+      .align-right {
+        text-align: right; }
+      .align-left {
+        text-align: left; }
+      .clear {
+        clear: both; }
+      .mt0 {
+        margin-top: 0; }
+      .mb0 {
+        margin-bottom: 0; }
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+      .powered-by a {
+        text-decoration: none; }
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        Margin: 20px 0; }
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; }
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }}
+          
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; } 
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
+    </style>
+  </head>
+  <body class=""><div align="center" style="color: #727272; font-size: 10px;">Si vous ne parvenez pas à lire cet e-mail, cliquez <a style="color:#01a4c6;" target="_blank" href="http://r.info-aeroemploi.com/76ts72an2zojf.html">ici</a></div>
+		
+
+<table border="0" cellpadding="0" cellspacing="0" class="body">
+  <tr>
+    <td>&nbsp;</td>
+    <td class="container">
+      <div class="content">
+
+        <!-- START CENTERED WHITE CONTAINER -->
+        <span class="preheader">Offres de la semaine sur Aéro Emploi</span>
+        <table class="main">
+
+          <!-- START MAIN CONTENT AREA -->
+          <tr>
+            <td class="wrapper">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <h1>Offres de la semaine</h1>
+                    <p>Bonjour,<br/>
+                      Voici les offres de la semaine sur Aéro Emploi.</p>
+
+                    <table border="0" cellpadding="0" cellspacing="0">
+                    	                    	<tr>
+                        <td>
+                          <h3>Honeur</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4s965b2zojd.html">Tekalia Aeronautik </a><br/><p><strong>SOMMAIRE</strong></p>
+
+<p>Relevant du chef d'équipe du département de rodage (honing), le titulaire du poste est responsable d'effectuer des rectifications cylindriques sur les pièces en  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4s96xr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Opérateur Classification des poudres</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4s97q72zojd.html">AP&amp;C A GE Additive Company</a><br/><ul>
+	<li>Opérer des tamiseurs automatiques (identifier des lots, analyser des résultats, changer et nettoyer des tamis, remplir les documents de tamisage, ro-tap, etc.);</li>
+	<li>Opérer le mélange </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4s98in2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Opérateur Atomisation</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4s99b32zojd.html">AP&amp;C A GE Additive Company</a><br/><p>En tant qu'Opérateur à l'atomisation, vous serez responsable de&nbsp;:</p>
+
+<ul>
+	<li>Préparer et opérer des unités de productions de poudres métalliques&nbsp;</li>
+	<li>Participer aux diagnost </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4s9a3j2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire de Projet Expérimenté</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4s9avz2zojd.html">PCUBED</a><br/><p>Au sein de notre Business Unit à Montréal, nous recherchons un&nbsp;Gestionnaire de&nbsp;Projet&nbsp;expérimenté pour accompagner l'un de nos clients, leader du secteur aéronautique.</p>
+
+<p>Inté </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4s9bof2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Finisseur de meubles - Banque de candidats</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4s9cgv2zojd.html">Agence Francyne Wilson</a><br/><ul>
+	<li>Masquer et démasquer les pièces;</li>
+	<li>Sabler les surfaces de bois massif et de placage;</li>
+	<li>Polir les pièces;</li>
+	<li>Lire et interpréter des plans et des dessins techniques </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4s9d9b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ébéniste d&#039;aéronefs - Banque de candidats</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf23xb2zojd.html">Agence Francyne Wilson</a><br/><ul>
+	<li>Fabriquer et réparer les articles de bois destinés à la finition intérieure des avions d'affaires;</li>
+	<li>Couper, monter et pré-coller des pièces de bois et de composites;</li>
+	<li>Sa </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf24pr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Superviseur Opérations</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf25i72zojd.html">Agence Francyne Wilson</a><br/><p>Vous serez resposable de superviser des employés syndiqués et d'assurer l'alignement de votre organisation dans la philosophie du système de gestion en place. &nbsp;</p>
+
+<p>Vous devrez inspirer  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf26an2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>AEROSPACE JOB OPENINGS IN MONTREAL AND TORONTO</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf27332zojd.html">TES-The Employment Solution</a><br/><p>We currently have the following long term contract openings in Montreal and Toronto.</p>
+
+<p>Montreal &amp; Mirabel:</p>
+
+<p>- Electrical Assemblers (10)</p>
+
+<p>- Mechanical, Interior and St </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf27vj2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Opérateur-Régleur Machiniste B (soir)</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf28nz2zojd.html">Avior Produits Intégrés</a><br/><p><strong>DÉPARTEMENT&nbsp;: PRODUCTION</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>SOMMAIRE&nbsp;:</strong></p>
+
+<p>Relevant du superviseur et du chef d'équipe (d'un point de vue technique), il rè </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf29gf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Opérateur-Régleur Machiniste B (nuit)</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2a8v2zojd.html">Avior Produits Intégrés</a><br/><p><strong>DÉPARTEMENT&nbsp;: PRODUCTION</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>SOMMAIRE&nbsp;:</strong></p>
+
+<p>Relevant du superviseur et du chef d'équipe (d'un point de vue technique), il rè </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2b1b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Buyer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2den2zojd.html">TES-The Employment Solution</a><br/><p>We are currently assisting our client a leader in the Transport industry in their search for a Buyer.<br />
+<br />
+Contract end of December 2017<br />
+Location: North Shore of Montreal<br />
+<b </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2e732zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Inspecteur Qualité - Structure d&#039;Aéronefs</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2ezj2zojd.html">AAA Canada</a><br/><p>AAA Canada offre des services manufacturiers spécialisés de sous-traitance in situ dans les domaines de l'industrialisation et de la production. Avec plus de 3000 employés partout dans le monde et  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2frz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent méthodes</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2gkf2zojd.html">AAA Canada</a><br/><p>AAA Canada offre des services manufacturiers spécialisés de sous-traitance in situ dans les domaines de l'industrialisation et de la production. Avec plus de 3000 employés partout dans le monde et  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2hcv2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Assembleur(se) de Structures d&#039;Aéronefs</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2i5b2zojd.html">AAA Canada</a><br/><p>AAA Canada offre des services manufacturiers spécialisés de sous-traitance in situ dans les domaines de l'industrialisation et de la production. Avec plus de 3000 employés partout dans le monde et  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2ixr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent logistique</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2jq72zojd.html">AAA Canada</a><br/><p>L'Agent Logistique jouera un rôle clé dans la gestion, les planifications et les communications liées aux M-kits et aux composants nécessaires à l'assemblage de l'avion en temps et de manière effic </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2kin2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Peintre industriel / Sprayer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2mvz2zojd.html">Zodiac Aerospace</a><br/><p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux, régionaux et d'affaire, de même qu'en matière d'applications spatiales et hélipo </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2nof2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Journalier / General Laborer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2ogv2zojd.html">Zodiac Aerospace</a><br/><p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux, régionaux et d'affaire, de même qu'en matière d'applications spatiales et hélipo </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2p9b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Assembleur Finale / Final Assembler</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2q1r2zojd.html">Zodiac Aerospace</a><br/><p><strong>Résumé du poste:&nbsp;</strong><br />
+Assemble des structures intérieures d'avion et ou des pièces, telles que des soutes, des offices, des blocs toilettes, des parois latérales, des frets </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2qu72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Rembourreur / Upholsterer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2rmn2zojd.html">Zodiac Aerospace</a><br/><p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux, régionaux et d'affaire, de même qu'en matière d'applications spatiales et hélipo </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2sf32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Opérateur / CNC Operator</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2t7j2zojd.html">Zodiac Aerospace</a><br/><p>Préparer et utiliser une machine à découper à contrôle numérique. Lire les instructions et les spécifications. Télécharger les contrôles médias contenant les commandes programmées en console de con </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2tzz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Finisseur / Finisher</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2wdb2zojd.html">Zodiac Aerospace</a><br/><h2>Description du poste</h2>
+
+<p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux, régionaux et d'affaire, de même qu'en matière d </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2x5r2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Superviseur de Production</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2xy72zojd.html">Assystem Canada</a><br/><p>Assystem Canada is currently seeking driven, experienced and dynamic production supervisors for an incredible outstanding work project for our biggest client in the aerospace industry!</p>
+
+<p><s </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf2yqn2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Acheteur</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf2zj32zojd.html">TES-The Employment Solution</a><br/><p>Nous sommes a la recherche pour des Acheteurs pour un des nos clients située aux Rive Nord.</p>
+
+<p>&nbsp;</p>
+
+<p>Contrat: fin décembre 2017</p>
+
+<p>Date De Début: Immédiatement</p>
+
+<p>Li </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf30bj2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Inspecteur (qualité de fabrication) / Quality Inspector</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf313z2zojd.html">Zodiac Aerospace</a><br/><table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf31wf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Chef d&#039;équipe - Support de production/Lead Hand-Production Support</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf32ov2zojd.html">Zodiac Aerospace</a><br/><p>Les responsabilités du Chef d'équipe de production sont de surveiller le rythme de la production sur sa ligne de montage, de s'assurer que toutes les politiques et procédures sont respectées au mêm </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf33hb2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Assembleur / Assembler</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf35un2zojd.html">Zodiac Aerospace</a><br/><p>Assemble des structures et/ou des pièces intérieures d'avions comme des soutes, des offices, des toilettes, des parois latérales, des cargos de lignes, etc. et construit des sous-ensembles pour la  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf36n32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent Méthodes / Method Agent</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf37fj2zojd.html">Zodiac Aerospace</a><br/><p>L'agent de méthodes a la responsabilité d'évaluer, de procéder à des vérifications et de proposer la révision des méthodes d'exploitation, des politiques et procédures, de formulaires, des rapports </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf387z2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Programmeur CNC (Catia/Edgecam)</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf390f2zojd.html">Solutions Aéro</a><br/><h2><strong>Une important entreprise en usinage de précision aéronautique est à la recherche d'un programmeur CNC</strong></h2>
+
+<ul>
+	<li>S'assurer de l'exactitude des dimensions des pièces selon  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf39sv2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent Qualité - Inspecteur</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3alb2zojd.html">Solutions Aéro</a><br/><h2><strong>Oportunité de carrière très intéressante à ne pas manquer!</strong></h2>
+
+<h2><strong>Entreprise de fabrication de pièces aéronautique&nbsp;solidement implanté depuis plusieurs années&nb </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3bdr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Formateur mécanicien avion/moteur</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3c672zojd.html">École Nationale d&#039;Aérotechnique</a><br/><p>La formation continue de l'École nationale d'aérotechnique est à la recherche d'un formateur en maintenance d'avion et de moteurs pour rejoindre son équipe et enseigner des formations dans les entr </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3cyn2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Formateur en avionique </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3fbz2zojd.html">École Nationale d&#039;Aérotechnique</a><br/><p>La formation continue de l'École nationale d'aérotechnique est à la recherche d'un formateur avionique pour rejoindre son équipe et enseigner des formations dans les entreprises, notamment à Toront </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3g4f2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Superviseur de Production</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3gwv2zojd.html">Abipa Canada inc.</a><br/><p>Sous la supervision du Directeur production, le Superviseur production doit contrôler la productivité des machines et de la main-d'&oelig;uvre, implanter des projets d'améliorations et gérer les coûts d' </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3hpb2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Assembleur-installateur électrique / Electrical Assembler-Installer </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3ihr2zojd.html">Zodiac Aerospace</a><br/><table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3ja72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Électromécanicien / Electro-mechanic </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3k2n2zojd.html">Zodiac Aerospace</a><br/><p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux, régionaux et d'affaire, de même qu'en matière d'applications spatiales et hélipo </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3kv32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Programmeur CNC / CNC Programmer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3lnj2zojd.html">Zodiac Aerospace</a><br/><p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux, régionaux et d'affaire, de même qu'en matière d'applications spatiales et hélipo </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3mfz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur Calcul F/H à Montréal (Canada)</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3otb2zojd.html">ALTITUDE AEROSPACE</a><br/><p>Altitude Aerospace est un bureau d'études en ingénierie aéronautique québécois, présent depuis plus de 10 ans sur Montréal et qui se spécialise dans la conception, l'analyse structurelle et la cert </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3plr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Machiniste CNC - Quart de soir</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3qe72zojd.html">ALTITUDE AEROSPACE</a><br/><p>Le machiniste a la responsabilité de réaliser, selon les normes de production de l'entreprise et du secteur, les pièces à produire.</p>
+
+<p>Cette position relève du Superviseur de production.</p> </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3r6n2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ebeniste/ Cabinet maker</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3rz32zojd.html">Zodiac Aerospace</a><br/><p>Zodiac Aerospace est un chef de file mondial en équipements et en systèmes aérospatiaux pour les avions commerciaux, régionaux et d'affaire, de même qu'en matière d'applications spatiales et hélipo </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3srj2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Expediteur/Expeditor</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3tjz2zojd.html">Zodiac Aerospace</a><br/><p><strong>Les principales tâches seront&nbsp;: </strong></p>
+
+<ul>
+	<li>Assurer le suivi des ordres de travail, rechercher les pièces et éviter les goulots d'étranglement&nbsp;</li>
+	<li>Faire le </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3ucf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Sprayer - Booth Operator / Opérateur de caisson de pulvérisation robotisé</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3v4v2zojd.html">Zodiac Aerospace</a><br/><p><strong>Résumé de l'offre d'emploi:</strong></p>
+
+<ul>
+	<li>Prépare et exploite le caisson de pulvérisation robotisé.</li>
+	<li>Lit les instructions d'installation et les spécifications.</li>
+ </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3vxb2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Magasinier / Stockroom Clerk</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3yan2zojd.html">Zodiac Aerospace</a><br/><p><strong>Résumé du poste:</strong></p>
+
+<p>&nbsp;</p>
+
+<p>Aider aux tâches associées au stockage et à la délivrance des matériaux utilisés dans la fabrication d'intérieurs d'avions en respectant </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf3z332zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Training Coordinator</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf3zvj2zojd.html">TES-The Employment Solution</a><br/><p>We are currently assisting our client a leader in the Aviation industry in their search for a Training Coordinator.<br />
+<br />
+Operations/Maintenance Training Planner is responsible to monitor  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf40nz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Formateur en avionique</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf41gf2zojd.html">École Nationale d&#039;Aérotechnique</a><br/><p>La formation continue de l'École nationale d'aérotechnique est à la recherche d'un formateur en avionique pour rejoindre son équipe et dispenser des formation sur mesure en entreprises.</p>
+
+<p>& </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf428v2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Magasinier </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf431b2zojd.html">AAA Canada</a><br/><p>Vous êtes un professionnel passionné par l'aéronautique et vous avez envie de relever de nouveaux défis?</p>
+
+<p>Plusieurs opportunités de carrière s'offrent à vous chez AAA Canada. En effet, nou </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf43tr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Commis expédition - livreur</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf44m72zojd.html">S.O.M.R.</a><br/><ul>
+	<li>Procéder à l'emballage des pièces selon les spécifications.</li>
+	<li>Effectuer de la manutention, décharger ou charger des camions</li>
+	<li>Effectuer des livraisons et des commissions.< </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf45en2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Dessinateur</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf47rz2zojd.html">Avianor Inc.</a><br/><p>&nbsp;</p>
+
+<p><strong>Sous l'autorité du directeur ingénierie,</strong> <strong>le dessinateur aura comme principales responsabilités:</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Préparer les de </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf48kf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Avionics Engineer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf49cv2zojd.html">PACS Placement Solutions</a><br/><p>We are seeking a highly skilled Avionics Engineer with knowledge of IFE systems and networks who will be responsible for in service reliability and airworthiness of aircraft Avionic/Electrical syst </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf4a5b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Préposé au remorquage d&#039;aéronefs </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf4axr2zojd.html">Transat A.T. Inc.</a><br/><h2><strong>Faites partie du voyage!</strong></h2>
+
+<p>Le titulaire de ce poste est responsable du remorquage de nos aéronefs dans les aires de man&oelig;uvre aéroportuaires, de barrière à barrière et de  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf4bq72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Aircraft Towing Serviceman </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf4cin2zojd.html">Transat A.T. Inc.</a><br/><h2><strong>Be Part of the Journey!</strong></h2>
+
+<p>The Aircraft Towing Serviceman is responsible for towing aircraft in the manoeuvring areas/gate to gate/hangar as well as hooking-up and transpo </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf4db32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur Industriel</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plf4e3j2zojd.html">Mecachrome Canada </a><br/><p>L'ingénieur industriel élabore, coordonne et participe aux projets d'amélioration continue des équipements et de l'outillage, des procédés de fabrication ainsi que des produits de l'usine tout en a </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plf4evz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>JUNIOR AIRCRAFT MECHANIC</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50p3rz2zojd.html">JMJ Aéronautique Inc.</a><br/><p><strong>Junior Aircraft Mechanic Wanted!</strong></p>
+
+<p>You are graduated as an aircraft mechanic?</p>
+
+<p>You are looking for your first opportunity?</p>
+
+<p>You would like to be part of a </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50p4kf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Coordonnateur de division à la formation / Division Training Coordinator</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50p5cv2zojd.html">Zodiac Aerospace</a><br/><div>
+<p><strong>Sommaire des tâches&nbsp;:</strong></p>
+</div>
+
+<ul>
+	<li>Mettre à jour et modifie le programme de formation composé des outils nécessaires pour établir, traiter et faire le suiv </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50p65b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>open house 200 positions to fill</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50p6xr2zojd.html">Assystem Canada</a><br/><p><strong>APPLY NOW TO TAKE PART IN AN OUTSTANDING JOURNEY!</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>OVER 200 POSITIONS AVAILABLE</strong></p>
+
+<p>IN THE AEROSPACE AND RAILWAY INDUSTRY!</p>
+
+< </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50p7q72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent de méthodes // Methods Agent - MON14332</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50p8in2zojd.html">GAL AeroStaff Ltd.</a><br/><p>GAL AeroStaff fournit des services spécialisés de recrutement dans l'industrie de l'aviation commerciale et d'affaires. Nous sommes présentement à la recherche d'<strong>Agent de méthodes</strong>& </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50p9b32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent de méthodes (Armoires) // Methods Agent (Cabinets) - MON14313</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50pa3j2zojd.html">GAL AeroStaff Ltd.</a><br/><p>GAL AeroStaff fournit des services spécialisés de recrutement dans l'industrie de l'aviation commerciale et d'affaires. Nous sommes présentement à la recherche d'<strong>Agents de méthodes (Armoire </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pavz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent de méthodes (Installation) // Methods Agent (Installation) - MON14343</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50pd9b2zojd.html">GAL AeroStaff Ltd.</a><br/><p>GAL AeroStaff fournit des services spécialisés de recrutement dans l'industrie de l'aviation commerciale et d'affaires. Nous sommes présentement à la recherche d'<strong>Agents de méthodes (Install </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pe1r2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent de méthodes // Methods Agent - MON14417</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50peu72zojd.html">GAL AeroStaff Ltd.</a><br/><p>GAL AeroStaff fournit des services spécialisés de recrutement dans l'industrie de l'aviation commerciale et d'affaires. Nous sommes présentement à la recherche d'<strong>Agent de méthodes</strong>& </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pfmn2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent de méthodes // Methods Agent - MON14413-C</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50pgf32zojd.html">GAL AeroStaff Ltd.</a><br/><p>GAL AeroStaff fournit des services spécialisés de recrutement dans l'industrie de l'aviation commerciale et d'affaires. Nous sommes présentement à la recherche d'<strong>Agents de méthodes</strong> </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50ph7j2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Spécialiste en recrutement de talents</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50phzz2zojd.html">Lockheed Martin Canada</a><br/><p>Lockheed Martin relève les défis technologiques les plus difficiles du monde. Dans un contexte de croissance imprévisible et de menaces en évolution, l'innovation et la performance sont au centre d </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pisf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Technicien solutions clients</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50pjkv2zojd.html">Lockheed Martin Canada</a><br/><p>Interagir avec les clients avant ou après la vente. Développer et maintenir de bonnes relations avec les clients; ce poste peut avoir des effets considérables sur la relation entre l'entreprise et  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pkdb2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Soutien technique administratif</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50pmqn2zojd.html">Lockheed Martin Canada</a><br/><p>Les tâches comprendront notamment : produire et réviser des données techniques et faciliter le flux d'informations reliées aux réparations. Cette fonction s'assure également que la documentation es </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pnj32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Spécialiste en propulsion de moteurs d&#039;avions</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50pobj2zojd.html">Lockheed Martin Canada</a><br/><p>Entretien de moteurs d'aéronefs Lockheed Martin (EMALM) est à la recherche d'un(e) candidat(e) pour fournir du soutien de première ligne à la production de moteurs dans le cadre du processus de rév </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pp3z2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Technicien de moteurs d&#039;aéronef</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50ppwf2zojd.html">Lockheed Martin Canada</a><br/><p>Au sein du groupe d'employés qui travaillent en révision de moteurs (ce qui inclut la révision de groupes motopropulseurs), essai et révision d'hélices, les candidats retenus accompliront des tâche </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50pqov2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire, Ingénierie de réparation</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50prhb2zojd.html">Lockheed Martin Canada</a><br/><p>Gère des tâches de planification technique, d'intégration de systèmes, de vérification et de validation, de coûts et de risques et d'analyses de prise en charge et d'efficacité pour des systèmes in </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50ps9r2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Man&oelig;uvre - Département de Nettoyage</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j50pt272zojd.html">Lockheed Martin Canada</a><br/><p>Comprend les employés effectuant l'opération et l'entretien de l'équipement de sablage utilisé par l'entreprise et le nettoyage des pièces de moteurs d'aéronef et de l'équipement connexe dans l'ate </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j50ptun2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    </table>
+
+                    <p>Bonne journée, <br/>
+                      L'équipe Aéro Emploi</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- END MAIN CONTENT AREA -->
+          </table>
+
+        <!-- START FOOTER -->
+        <div class="footer">
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="content-block">
+                <span class="apple-link">Trouvez l'emploi qui vous passionne avec</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="content-block powered-by">
+                <a href="http://r.info-aeroemploi.com/click/3718j50pw7z2zojd.html">aeroemploi.ca</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- END FOOTER -->
+        
+<!-- END CENTERED WHITE CONTAINER --></div>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+  <div align="center" style="color: #727272; font-size: 10px;">Si vous souhaitez vous désinscrire de notre newsletter, cliquez <a style="color:#01a4c6;" target="_blank" href="http://r.info-aeroemploi.com/76ts72an2zojg.html">ici</a></div><div><img width="1" height="1" src="http://r.info-aeroemploi.com/track/76ts72an2zojh.gif" /></div></body>
+</html>
+

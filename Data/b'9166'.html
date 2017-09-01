@@ -1,0 +1,1669 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0; 
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; }
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+      .body {
+        background-color: #f6f6f6;
+        width: 100%; }
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: auto !important;
+        width: 580px; }
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; }
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        border-radius: 3px;
+        width: 100%; }
+      .wrapper {
+        box-sizing: border-box;
+        padding: 20px; }
+      .footer {
+        clear: both;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%; }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center; }
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;}
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 15px; }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+      a {
+        color: #3498db;
+        text-decoration: underline; }
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #3498db;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #3498db;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;}
+      .btn-primary table td {
+        background-color: #3498db; }
+      .btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; }
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+      .first {
+        margin-top: 0; }
+      .align-center {
+        text-align: center; }
+      .align-right {
+        text-align: right; }
+      .align-left {
+        text-align: left; }
+      .clear {
+        clear: both; }
+      .mt0 {
+        margin-top: 0; }
+      .mb0 {
+        margin-bottom: 0; }
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+      .powered-by a {
+        text-decoration: none; }
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        Margin: 20px 0; }
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; }
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }}
+          
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; } 
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
+    </style>
+  </head>
+  <body class=""><div align="center" style="color: #727272; font-size: 10px;">Si vous ne parvenez pas à lire cet e-mail, cliquez <a style="color:#01a4c6;" target="_blank" href="http://r.info-aeroemploi.com/76ts79en2zojf.html">ici</a></div>
+		
+
+<table border="0" cellpadding="0" cellspacing="0" class="body">
+  <tr>
+    <td>&nbsp;</td>
+    <td class="container">
+      <div class="content">
+
+        <!-- START CENTERED WHITE CONTAINER -->
+        <span class="preheader">Offres de la semaine sur Aéro Emploi</span>
+        <table class="main">
+
+          <!-- START MAIN CONTENT AREA -->
+          <tr>
+            <td class="wrapper">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <h1>Offres de la semaine</h1>
+                    <p>Bonjour,<br/>
+                      Voici les offres de la semaine sur Aéro Emploi.</p>
+
+                    <table border="0" cellpadding="0" cellspacing="0">
+                    	                    	<tr>
+                        <td>
+                          <h3>Technicien/Ingénieur Méthodes à Toronto</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4t1m5b2zojd.html">ALTITUDE AEROSPACE</a><br/><p>Nous sommes à la recherche d'un technicien/ingénieur méthode pour un de nos partenaires basé à Toronto au Canada.</p>
+
+<p>Description du poste:</p>
+
+<p>- Identifier et développer des spécificat </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4t1mxr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Methods Engineer/Technician in Toronto</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4t1nq72zojd.html">ALTITUDE AEROSPACE</a><br/><p>We are looking for a methods engineer/technician for one of our partners based in Toronto.</p>
+
+<p>Job Description:</p>
+
+<p>- Identify and develop structure specifications to ensure compliance  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4t1oin2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur de projet</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4t1pb32zojd.html">Avianor Inc.</a><br/><p><strong>Sous l'autorité du directeur ingénierie, l'ingénieur de projet aura comme principales responsabilités:</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Définir les aspects techniques d'un projet </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4t1q3j2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire de projet ingénierie </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4t1qvz2zojd.html">Avianor Inc.</a><br/><p><strong>Sous l'autorité du directeur ingénierie, le gestionnaire de projet ingénierie aura comme principales responsabilités:</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Définir les aspects techniq </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4t1rof2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Project Management Officer (PMO) </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/srb4t1sgv2zojd.html">AAA Canada</a><br/><p>Le Project Management Officer (PMO) doit supporter le Chef de projet dans ses missions en coordonnant, participant et assurant un suivi des activités de développement, tout en étant l'interface des </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/srb4t1t9b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire de projet</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojfxb2zojd.html">AAA Canada</a><br/><p>Le Project leader a la responsabilité de gérer et assurer le suivi des activités et des KPI en gérant les ressources et en définissant la charge de travail des équipes pour s'assurer que le plannin </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojgpr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Technicien(ne) en travaux pratiques-Avionique</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojhi72zojd.html">Cégep Édouard-Montpetit</a><br/><p>Concours 17-S-44</p>
+
+<p>Technicien(ne) en travaux pratiques-Service de l'assurance qualité-Département d'avionique</p>
+
+<p>École nationale d'aérotechnique</p>
+
+<p>Sous la responsabilité de m </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojian2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Technicien de moteurs d&#039;aéronef </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojj332zojd.html">Lockheed Martin Canada</a><br/><table>
+	<tbody>
+		<tr>
+			<td>Description de poste spécifique</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<tbody>
+		<tr>
+			<td>&bull; Peuvent transporter des pièces, des composants, des modules  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojjvj2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Commandant King Air</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojknz2zojd.html">MAX AVIATION</a><br/><p>Entreprise familiale en affaire depuis plus de 50 ans, Max Aviation est l'une des plus importantes entreprises de transport aérien nolisé au Québec avec sa flotte de 8 King Air et ses différentes b </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojlgf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Premier Officier King Air</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojm8v2zojd.html">MAX AVIATION</a><br/><p>Entreprise familiale en affaire depuis plus de 50 ans, Max Aviation est l'une des plus importantes entreprises de transport aérien nolisé au Québec avec sa flotte de 8 King Air et ses différentes b </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojn1b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Inspecteur Qualité</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojpen2zojd.html">Les Industries Leesta Ltd. </a><br/><p>L'inspecteur sera responsable de l'inspection et l'approbation des premières pièces usinées avant le lancement de la production.</p>
+
+<h3>Responsabilités</h3>
+
+<div>
+<ul>
+	<li>Inspection des  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojq732zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Coordonnateur Centre de services TI</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojqzj2zojd.html">AVJET</a><br/><table align="left" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><strong>RÉSUMÉ DE L'EMPLOI</strong></p>
+
+			<p>Sous la supervision du Vice-président, Finances et technologie,  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojrrz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent de dégivrage</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojskf2zojd.html">AVJET</a><br/><p>Nous sommes présentement à la recherche d'agents de dégivrage saisonniers pour la base de Québec, située à l'aéroport Jean Lesage.</p>
+
+<p><br />
+DESCRIPTION</p>
+
+<ul>
+	<li>Effectuer la vérif </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojtcv2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent de dégivrage</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3ploju5b2zojd.html">AVJET</a><br/><p>Nous sommes présentement à la recherche d'agents de dégivrage saisonniers pour la base de Québec, située à l'aéroport Jean Lesage.</p>
+
+<p><br />
+DESCRIPTION</p>
+
+<ul>
+	<li>Effectuer la vérif </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojuxr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Planificateur de production</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojvq72zojd.html">Hutchinson Aéronautique et Industrie ltée</a><br/><p>Le titulaire du poste est responsable des activités se rapportant à la planification de la production, des matières premières et à la gestion des inventaires, de façon à respecter les échéanciers e </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojwin2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire de Projet Expérimenté</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plojyvz2zojd.html">PCUBED</a><br/><p>Au sein de notre Business Unit à Montréal, nous recherchons un&nbsp;Gestionnaire de&nbsp;Projet&nbsp;expérimenté pour accompagner l'un de nos clients, leader du secteur aéronautique.</p>
+
+<p>Inté </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plojzof2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>PMO Aéronautique</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plok0gv2zojd.html">PCUBED</a><br/><p>Au sein d'une entreprise dans le secteur aéronautique, vous accompagnerez de manière opérationnelle le chef de projet pour mener à bien ses projets en terme de performance et de délais. Vos mission </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plok19b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Aircraft Manager (OSW)</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plok21r2zojd.html">PCUBED</a><br/><p>Au sein de notre Business Unit à&nbsp;Toronto nous recherchons un Aircraft Manager (OSW) expérimenté pour accompagner l'un de nos clients, leader du secteur aéronautique.</p>
+
+<p>Intégré au c&oelig;ur  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plok2u72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Production Program Manager</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plok3mn2zojd.html">PCUBED</a><br/><p>We are looking for a Senior Production Program Manager, based in our Business Unit in Toronto, to support one of our customers, leader in the aeronautic industry.</p>
+
+<p>Working as a Project Man </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plok4f32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Opérateur CNC</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plok57j2zojd.html">Abipa Canada inc.</a><br/><p><strong>Rôles</strong></p>
+
+<p>Sous la supervision du Superviseur de production, l'opérateur&nbsp;CNC doit être en mesure d'opérer les équipements et régler les outils de coupe tout en respectant </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plok5zz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Opérateur de machines d&#039;usinage</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plok8db2zojd.html">Solutions Aéro</a><br/><p><strong>Sous la supervision du Superviseur de production, l'opérateur usinage-scie doit être en mesure d'opérer les équipements et régler les outils de coupe tout en respectant les normes de produc </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plok95r2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire de projet</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plok9y72zojd.html">Avianor Inc.</a><br/><p><strong>Sous l'autorité du directeur gestion de projet, le gestionnaire de projet aura comme principales responsabilités:</strong></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>Organiser, diriger, contrôler l </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokaqn2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ébéniste d&#039;aéronefs</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokbj32zojd.html">AEROTEK</a><br/><p><strong>Aerotek</strong> est toujours à la recherche de bons candidats en <strong>ébénisterie d'aéronefs</strong>&nbsp; pour l'un de ses clients de grande envergure dans le secteur de l'aéronautiqu </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokcbj2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ébéniste d&#039;aéronefs</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokd3z2zojd.html">AEROTEK</a><br/><p><strong>Aerotek</strong> est toujours à la recherche de bons candidats en <strong>ébénisterie d'aéronefs</strong>&nbsp; pour l'un de ses clients de grande envergure dans le secteur de l'aéronautiqu </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokdwf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Finisseur de meubles</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokeov2zojd.html">AEROTEK</a><br/><p><strong>Aerotek</strong> est présentement <strong>à la recherche de</strong> <strong>plusieurs finisseurs de meubles </strong>&nbsp;pour l'un de ses clients de grande envergure dans le secteur de l </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokfhb2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Designer Mise au Point (MAP) à Toulouse</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokhun2zojd.html">ALTITUDE AEROSPACE</a><br/><p>Altitude Aerospace est un bureau d'études en ingénierie aéronautique québécois, présent depuis plus de 10 ans sur Montréal et qui se spécialise dans la conception, l'analyse structurelle et la cert </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokin32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur Calcul à Bordeaux</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokjfj2zojd.html">ALTITUDE AEROSPACE</a><br/><p>Altitude Aerospace est un bureau d'études en ingénierie aéronautique québécois, présent depuis plus de 10 ans sur Montréal et qui se spécialise dans la conception, l'analyse structurelle et la cert </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokk7z2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire de programme </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokl0f2zojd.html">Héroux Devtek</a><br/><p>Gestionnaire de programme&nbsp;<br />
+<br />
+Information sur la société :&nbsp;<br />
+Héroux-Devtek, dont le siège social est situé à Longueuil (Québec) au Canada, est une société active à l'éch </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3ploklsv2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Technicien en révision générale </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokmlb2zojd.html">Héroux Devtek</a><br/><p>Technicien en révision générale&nbsp;<br />
+<br />
+Information sur la société :&nbsp;<br />
+Héroux-Devtek, dont le siège social est situé à Longueuil (Québec) au Canada, est une société active à </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokndr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur Calculs</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3ploko672zojd.html">ALTITUDE AEROSPACE</a><br/><p>Nous avons actuellement plusieurs postes ouverts en calculs.</p>
+
+<p><em><strong>Ingénieur Statique et Fatigue</strong></em></p>
+
+<ul>
+	<li>Minimum 3 ans d'expérience requise</li>
+</ul>
+
+<p </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokoyn2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Stress Engineer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokrbz2zojd.html">ALTITUDE AEROSPACE</a><br/><p>We have currently several positions open in stress analyses:</p>
+
+<p><strong><em>Stress Engineer Static and Fatigue</em></strong></p>
+
+<ul>
+	<li>Minimum of 3 years of functional work experienc </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3ploks4f2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Concepteur Reparations Structurelles</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokswv2zojd.html">ALTITUDE AEROSPACE</a><br/><p><strong>Principales responsabilités&nbsp;:</strong></p>
+
+<ul>
+	<li>Évaluer les dommages structurels de l'avion ;</li>
+	<li>Proposer des solutions de réparations conforme aux réglementations du  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3ploktpb2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Structural Repairs Designer</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokuhr2zojd.html">ALTITUDE AEROSPACE</a><br/><p><strong>Main Responsibilities:</strong></p>
+
+<ul>
+	<li>Assess the structural damage on the aircraft;</li>
+	<li>Propose repair solutions that comply with industry regulations and customer requir </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokva72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Analyste Senior, Planification de produits, Expérience Client</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokw2n2zojd.html">Bombardier</a><br/><p>Chez Bombardier Aéronautique, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'envi </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokwv32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Concepteur des designs 3D – harnais électriques</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plokxnj2zojd.html">Bombardier</a><br/><p>Chez Bombardier, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement pou </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plokyfz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Chargé de projet</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plol0tb2zojd.html">Bombardier</a><br/><p>Chez Bombardier, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement pou </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plol1lr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur spécialiste - Conception de structures</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plol2e72zojd.html">Bombardier</a><br/><p>Chez Bombardier Aéronautique, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'envi </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plol36n2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur manufacturier</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plol3z32zojd.html">Bombardier</a><br/><p>Chez Bombardier, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement pou </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plol4rj2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Spécialiste en ingénierie senior, Avionique</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plol5jz2zojd.html">Bombardier</a><br/><p>Chez Bombardier, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Nous avons l'environnement pour que ces idées deviennent un </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plol6cf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent méthodes</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plol74v2zojd.html">Bombardier</a><br/><p>Chez Bombardier, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement pou </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plol7xb2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Superviseur Opérations (Soir)</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plolaan2zojd.html">Bombardier</a><br/><p>Chez Bombardier, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement pou </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolb332zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Chef Instructeur de vol Classe 1-2</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plolbvj2zojd.html">Centre de Formation Aéronautique de Québec </a><br/><p>Le Centre de Formation Aéronautique de Québec (CFAQ) est présentement à la recherche d'un chef instructeur (CFI) classe 1 ou 2 détenant de l'expérience sur TWIN-IFR et qui est prêt à s'investir dan </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolcnz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>EXCELLENTE OPPORTUNITÉ ! FORMATION OFFERTE EN SEPTEMBRE POUR DEVENIR ASSEMBLEUR DE STRUCTURE</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3ploldgf2zojd.html">AEROTEK</a><br/><p><strong>EXCELLENTE OPPORTUNITÉ ! FORMATION POUR DEVENIR Assembleur de structure</strong></p>
+
+<p>Vous avez toujours rêvé de travailler dans le domaine de l'aéronautique et vous êtes présentement  </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plole8v2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>CHEF DE LA TARIFICATION – CO-ENTREPRISE</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plolf1b2zojd.html">AIR CANADA</a><br/><p>Air&nbsp;Canada a un poste de libre pour une personne dynamique qui désire apporter sa contribution à l'organisation et souhaite faire carrière dans l'univers de la Gestion du chiffre d'affaires et </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolftr2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>CHEF DE LA TARIFICATION – CO-ENTREPRISE</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plolgm72zojd.html">AIR CANADA</a><br/><p>Air&nbsp;Canada a un poste de libre pour une personne dynamique qui désire apporter sa contribution à l'organisation et souhaite faire carrière dans l'univers de la Gestion du chiffre d'affaires et </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolhen2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Aircraft Maintenance Coordinator </h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3ploljrz2zojd.html">GAL AeroStaff Ltd.</a><br/><p>GAL AeroStaff fournit des services spécialisés de recrutement dans l'industrie de l'aviation commerciale et d'affaires. Nous sommes présentement à la recherche de&nbsp;<strong>Coordonnateur en entr </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolkkf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Technicien structure d&#039;avion</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plollcv2zojd.html">L3 MAS</a><br/><p>Vous avez de l'expérience en structure d'avion? Vous avez un DEP en montage (ou assemblage) de structure? Vous cherchez de la nouveauté? Vous êtes prêts à apprendre et à suivre des formations? Bref </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolm5b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Analyste Programme</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plolmxr2zojd.html">Bombardier</a><br/><p>Chez Bombardier Aéronautique, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'envi </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolnq72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Chargé de projet</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3ploloin2zojd.html">Bombardier</a><br/><p>Chez Bombardier Aéronautique, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'envi </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolpb32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur Projet – Ingénierie Câblage Électrique</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/9l3plolq3j2zojd.html">Bombardier</a><br/><p>Chez Bombardier, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement pou </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/9l3plolqvz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent Méthodes Senior</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j86h3rz2zojd.html">Bombardier</a><br/><p>Chez Bombardier Aéronautique, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'envi </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j86h4kf2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Superviseur Opérations</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j86h5cv2zojd.html">Bombardier</a><br/><p>Chez Bombardier Aéronautique, nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'envi </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j86h65b2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Agent Méthode Assemblage, Global – Gestion de configuration</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j86h6xr2zojd.html">Bombardier</a><br/><p>Ce poste constitue une occasion unique de participer au développement de produits à la fine pointe de la technologie chez Bombardier en faisant partie de l'équipe de gestion des connaissances.<br / </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j86h7q72zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Gestionnaire de projet méthodes/qualité</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j86h8in2zojd.html">Bombardier</a><br/><p>Chez Bombardier , nos collaborateurs travaillent ensemble à faire évoluer la mobilité partout dans le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement po </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j86h9b32zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    	<tr>
+                        <td>
+                          <h3>Ingénieur avionique</h3>
+                            <p>
+                              Offre publiée par <a href="http://r.info-aeroemploi.com/click/3718j86ha3j2zojd.html">Bombardier</a><br/><p>Chez Bombardier, 33,600 collaborateurs dans 25 pays travaillent ensemble pour faire avancer le monde, une bonne idée après l'autre. Si vous avez une bonne idée, nous avons l'environnement pour qu'e </p>
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+	                      <tbody>
+	                        <tr>
+	                          <td align="left">
+	                            <table border="0" cellpadding="0" cellspacing="0">
+	                              <tbody>
+	                                <tr>
+	                                  <td> <a href="http://r.info-aeroemploi.com/click/3718j86havz2zojd.html" target="_blank">Postuler</a> </td>
+	                                </tr>
+	                              </tbody>
+	                            </table>
+	                          </td>
+	                        </tr>
+	                      </tbody>
+	                    </table>
+                        <hr/>
+                        </td>
+                      </tr>
+						                    </table>
+
+                    <p>Bonne journée, <br/>
+                      L'équipe Aéro Emploi</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- END MAIN CONTENT AREA -->
+          </table>
+
+        <!-- START FOOTER -->
+        <div class="footer">
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="content-block">
+                <span class="apple-link">Trouvez l'emploi qui vous passionne avec</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="content-block powered-by">
+                <a href="http://r.info-aeroemploi.com/click/3718j86hd9b2zojd.html">aeroemploi.ca</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- END FOOTER -->
+        
+<!-- END CENTERED WHITE CONTAINER --></div>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+  <div align="center" style="color: #727272; font-size: 10px;">Si vous souhaitez vous désinscrire de notre newsletter, cliquez <a style="color:#01a4c6;" target="_blank" href="http://r.info-aeroemploi.com/76ts79en2zojg.html">ici</a></div><div><img width="1" height="1" src="http://r.info-aeroemploi.com/track/76ts79en2zojh.gif" /></div></body>
+</html>
+

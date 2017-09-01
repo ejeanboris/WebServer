@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    #'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
@@ -75,46 +75,46 @@ WSGI_APPLICATION = 'Home.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-# [START db_setup]
-DATABASES = {
-    'default': {
-        # If you are using Cloud SQL for MySQL rather than PostgreSQL, set
-        # 'ENGINE': 'django.db.backends.mysql' instead of the following.
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'blogs',
-        'USER': 'Remi',
-        'PASSWORD': 'Incorrect47',
-    }
-}
+#[START db_setup]
+DATABASES = {}
+    #'default': {
+        #_ If you are using Cloud SQL for MySQL rather than PostgreSQL, set
+        #_ 'ENGINE': 'django.db.backends.mysql' instead of the following.
+        #_'ENGINE': 'django.db.backends.mysql',
+        #_'NAME': 'blogs',
+        #_'USER': 'Remi',
+        #_'PASSWORD': 'Incorrect47',
+    #}
+#}
 # In the flexible environment, you connect to CloudSQL using a unix socket.
 # Locally, you can use the CloudSQL proxy to proxy a localhost connection
 # to the instance
-DATABASES['default']['HOST'] = '/cloudsql/testproj-1076:us-east1:blogs-instance'
-if os.getenv('GAE_INSTANCE'):
-    pass
-else:
-    DATABASES['default']['HOST'] = '127.0.0.1'
+#_DATABASES['default']['HOST'] = '/cloudsql/testproj-1076:us-east1:blogs-instance'
+#if os.getenv('GAE_INSTANCE'):
+    #pass
+#else:
+    #DATABASES['default']['HOST'] = '127.0.0.1'
 
-# [END dbconfig]
+#[END dbconfig]
 
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
+#AUTH_PASSWORD_VALIDATORS = [
+#    {
+        #'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+#    },
+#    {
+#        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+#    },
+#    {
+#        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+#    },
+#    {
+#        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+#    },
+#]
 
 
 # Internationalization
@@ -134,5 +134,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_ROOT = 'static'
-STATIC_URL = 'http://storage.googleapis.com/testproj-1076/static/'
+#STATIC_ROOT = 'static'
+#STATIC_URL = 'http://storage.googleapis.com/testproj-1076/static/'
